@@ -1,17 +1,8 @@
 # Agent Workflow
 
-1. Site Auditor reviews the website and finds visual issues.
-
-2. Designer converts the issue into a clear task.
-
-3. The task is added to TASK_QUEUE.md under Pending Tasks.
-
-4. Fixer reads TASK_QUEUE.md and executes the first pending task.
-
-5. After implementing the change, the Fixer moves the task to Needs Verification.
-
-6. Verifier reviews the result visually on localhost.
-
-7. If the result is correct → move task to Completed Tasks.
-
-8. If the result is incorrect → revert the change and return task to Pending Tasks.
+1. Site Auditor inspects the site and adds new issues as Pending.
+2. Designer refines vague Pending tasks into clear implementation instructions.
+3. Fixer reads the first Pending task, marks it In Progress, implements it, then moves it to Needs Verification.
+4. Verifier reads the first Needs Verification task, checks it visually, and moves it to Completed or Failed.
+5. Agents should only act on the statuses assigned to their role.
+6. No agent should work on more than one task at a time.
