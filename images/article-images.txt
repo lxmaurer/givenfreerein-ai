@@ -1,0 +1,11 @@
+[Comanche horse nation]
+Filename: comanche-horse-nation.jpg
+Description: Three Comanche men on horseback, historical black and white photo.
+
+[Escaramuza]
+Filename: escaramuza.jpg
+Description: Women in colorful dresses and sombreros riding horses in a Mexican arena.
+
+[The Side Saddle]
+Filename: side-saddle.jpg
+Description: Rider in formal attire riding sidesaddle on an Appaloosa horse in an indoor arena.

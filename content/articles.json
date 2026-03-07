@@ -1,0 +1,58 @@
+{
+  "articles": [
+    {
+      "id": "the-side-saddle",
+      "title": "The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture",
+      "slug": "the-side-saddle-an-evolution-shaped-by-constraint-craft-and-culture",
+      "url": "https://www.givenfreerein.com.au/articles/the-side-saddle-an-evolution-shaped-by-constraint-craft-and-culture",
+      "excerpt": "The side saddle was not a decorative tradition but a technical response to social constraint. This article traces its evolution from medieval Europe to its peak in British hunting, its divergence in America, and its survival in living traditions — revealing how culture shaped equestrian design.",
+      "category": "Gear & Tack",
+      "region": "Europe",
+      "featured_image": null,
+      "read_time": "8 min read",
+      "published_date": null,
+      "tags": ["sidesaddle", "equestrian history", "women's riding", "cultural evolution"]
+    },
+    {
+      "id": "escaramuza",
+      "title": "Escaramuza: Women, Horses, and Tradition in Mexico's Arena",
+      "slug": "escaramuza-women-horses-and-tradition-in-mexicos-arena",
+      "url": "https://www.givenfreerein.com.au/articles/escaramuza-women-horses-and-tradition-in-mexicos-arena",
+      "excerpt": "Set to music and performed at full gallop, Escaramuza brings eight riders into the arena as a single unit. Riding sidesaddle, they move through crossing lines and sweeping turns with precision and control. More than spectacle, Escaramuza is a disciplined team sport shaped by tradition, revealing a side of Mexican horsemanship built on coordination, responsibility, and heritage.",
+      "category": "Cultures",
+      "region": "Americas",
+      "featured_image": null,
+      "read_time": "6 min read",
+      "published_date": null,
+      "tags": ["escaramuza", "mexico", "women riders", "charro tradition", "team riding"]
+    },
+    {
+      "id": "comanche-horse-nation",
+      "title": "Lords of the Southern Plains: The Rise and Fall of the Comanche Horse Nation",
+      "slug": "lords-of-the-southern-plains-the-rise-and-fall-of-the-comanche-horse-nation",
+      "url": "https://www.givenfreerein.com.au/articles/lords-of-the-southern-plains-the-rise-and-fall-of-the-comanche-horse-nation",
+      "excerpt": "For the Comanche, the horse was not a means of travel but the foundation of warfare, survival, and freedom. On the Southern Plains, they forged a style of horsemanship so effective it reshaped power, territory, and life itself.",
+      "category": "Cultures",
+      "region": "Americas",
+      "featured_image": null,
+      "read_time": "10 min read",
+      "published_date": null,
+      "tags": ["comanche", "native american", "horse culture", "plains tribes", "warfare"]
+    },
+    {
+      "id": "camargue-horses",
+      "title": "The Horses of the Camargue",
+      "slug": "the-horses-of-the-camargue",
+      "url": "https://www.givenfreerein.com.au/articles/the-horses-of-the-camargue",
+      "excerpt": "Tough, white, and semi-feral, the Camargue horse is a living part of southern France's wetland culture. This article explores the breed's origins, traits, working life with the Gardians, and how tradition and ecology keep it thriving today.",
+      "category": "Breeds",
+      "region": "Europe",
+      "featured_image": null,
+      "read_time": "7 min read",
+      "published_date": null,
+      "tags": ["camargue", "france", "wetlands", "gardians", "semi-feral", "traditional breeds"]
+    }
+  ],
+  "featured_article": "comanche-horse-nation",
+  "total_articles": 4
+}

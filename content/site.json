@@ -1,0 +1,57 @@
+{
+  "site": {
+    "name": "Given Free Rein",
+    "tagline": "Exploring Culture through Horses",
+    "description": "It's not just about horses. It's about people, place, and the history shared between them. Here, I share stories from across the globe — where horse culture is alive and thriving, ancient and evolving.",
+    "url": "https://www.givenfreerein.com.au",
+    "author": "Alex Maurer",
+    "author_bio": "From the showjumping arenas of Malaysia and Germany to the paddocks of Australia, horses have shaped every chapter of my life. What began as a childhood passion has become a lifelong journey — training, competing, and working alongside these remarkable animals across the world.",
+    "social": {
+      "instagram": "https://www.instagram.com/givenfreerein/",
+      "facebook": "https://www.facebook.com/people/Given-Free-Rein/61578737550878/"
+    },
+    "contact": "https://www.givenfreerein.com.au/contact-givenfreerein",
+    "business": {
+      "name": "Alessandra Equine",
+      "abn": "87 668 054 153",
+      "website": "https://www.alessandraequine.com/"
+    }
+  },
+  "navigation": [
+    {
+      "name": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "name": "Articles",
+      "url": "/all-articles",
+      "external": true
+    },
+    {
+      "name": "Breeds",
+      "url": "/horse-breeds-from-around-the-world",
+      "external": true
+    },
+    {
+      "name": "Destinations",
+      "url": "/horse-travel-destinations",
+      "external": true
+    },
+    {
+      "name": "Gear & Tack",
+      "url": "/unique-horse-gear-and-tack",
+      "external": true
+    },
+    {
+      "name": "About",
+      "url": "/about-alex-maurer-horse-trainer",
+      "external": true
+    }
+  ],
+  "newsletter": {
+    "title": "Join The Ride",
+    "description": "Subscribe to Given Free Rein for stories celebrating the art, people, and culture of the horse world.",
+    "signup_text": "Sign Up"
+  }
+}

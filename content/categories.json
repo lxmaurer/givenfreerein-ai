@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": "breeds",
+      "name": "Breeds",
+      "slug": "horse-breeds-from-around-the-world",
+      "url": "https://www.givenfreerein.com.au/horse-breeds-from-around-the-world",
+      "description": "Explore horse breeds from around the world and their cultural significance",
+      "article_count": 1,
+      "featured": false
+    },
+    {
+      "id": "destinations",
+      "name": "Destinations",
+      "slug": "horse-travel-destinations",
+      "url": "https://www.givenfreerein.com.au/horse-travel-destinations",
+      "description": "Discover horse travel destinations and equestrian tourism spots",
+      "article_count": 0,
+      "featured": false
+    },
+    {
+      "id": "gear-tack",
+      "name": "Gear & Tack",
+      "slug": "unique-horse-gear-and-tack",
+      "url": "https://www.givenfreerein.com.au/unique-horse-gear-and-tack",
+      "description": "Unique horse gear and tack from different cultures and traditions",
+      "article_count": 1,
+      "featured": false
+    },
+    {
+      "id": "cultures",
+      "name": "Cultures",
+      "slug": "cultures",
+      "url": "https://www.givenfreerein.com.au/cultures",
+      "description": "Horse cultures and traditions from around the world",
+      "article_count": 2,
+      "featured": true
+    },
+    {
+      "id": "articles",
+      "name": "All Articles",
+      "slug": "all-articles",
+      "url": "https://www.givenfreerein.com.au/all-articles",
+      "description": "Complete collection of all articles on Given Free Rein",
+      "article_count": 4,
+      "featured": false
+    }
+  ],
+  "regions": [
+    {
+      "id": "europe",
+      "name": "Europe",
+      "article_count": 2,
+      "description": "European horse cultures and traditions"
+    },
+    {
+      "id": "americas",
+      "name": "Americas",
+      "article_count": 2,
+      "description": "North and South American horse cultures"
+    },
+    {
+      "id": "asia",
+      "name": "Asia",
+      "article_count": 0,
+      "description": "Asian horse cultures and traditions"
+    },
+    {
+      "id": "africa",
+      "name": "Africa",
+      "article_count": 0,
+      "description": "African horse cultures and traditions"
+    },
+    {
+      "id": "oceania",
+      "name": "Oceania",
+      "article_count": 0,
+      "description": "Oceanian horse cultures and traditions"
+    }
+  ]
+}
