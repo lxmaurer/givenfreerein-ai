@@ -166,12 +166,9 @@ html, body {
   padding: 0.5rem 0 2rem 0;
 }
 .hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
   max-width: 1200px;
   margin: 0 auto;
-  gap: var(--spacing);
   padding: 0 var(--spacing);
 }
 .hero-text {
