@@ -1,0 +1,11 @@
+# Side Saddle Article Image Manifest
+# Format: order_number | original_description | matched_local_file | found
+
+01 | Woman riding in a modern English sidesaddle class | NOT FOUND | ❌
+02 | Mrs. Esther Stace riding sidesaddle and clearing 1.98 m (6 ft 6 in) | NOT FOUND | ❌
+03 | Queen Elizabeth II riding side-saddle | NOT FOUND | ❌
+04 | Western sidesaddle class | images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg | ✅
+05 | Refurbished antique "catalogue" saddle, manufactured circa 1900 | NOT FOUND | ❌
+06 | Escaramuza is an equestrian sport performed in side-saddle | images/escaramuza/escaramuza_women.jpg | ✅
+
+# Only two images could be matched by description/filename. Others not found in your local images.
