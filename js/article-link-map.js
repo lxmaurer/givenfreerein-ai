@@ -7,7 +7,10 @@ window.articleKeywordDatabase = [
       "Andalusian",
       "Andalusian horse",
       "PRE horse",
-      "Pura Raza Espanola"
+      "Pura Raza Espanola",
+      "Iberian horse",
+      "Spanish horse",
+      "Spanish horses first escaped"
     ]
   },
   {
@@ -16,7 +19,9 @@ window.articleKeywordDatabase = [
       "Camargue",
       "Camargue horse",
       "horses of the Camargue",
-      "Gardian"
+      "Gardian",
+      "white horses of the Camargue",
+      "Rhone delta horses"
     ]
   },
   {
@@ -24,7 +29,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Comanche",
       "Comanche horse nation",
-      "Southern Plains horse culture"
+      "Southern Plains horse culture",
+      "Comanche horsemanship",
+      "Plains horse culture"
     ]
   },
   {
@@ -32,7 +39,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Escaramuza",
       "Mexican escaramuza",
-      "women charra riders"
+      "women charra riders",
+      "charra riders",
+      "Mexican sidesaddle"
     ]
   },
   {
@@ -40,7 +49,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "side saddle",
       "side-saddle",
-      "riding aside"
+      "riding aside",
+      "sidesaddle riding",
+      "history of side saddle"
     ]
   },
   {
@@ -49,7 +60,10 @@ window.articleKeywordDatabase = [
       "Spanish saddle",
       "Silla Vaquera",
       "doma vaquera saddle",
-      "Spanish tack"
+      "Spanish tack",
+      "vaquera saddle",
+      "traditional Spanish saddle",
+      "just a rope halter"
     ]
   },
   {
@@ -57,7 +71,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Soul of Spain Part I",
       "Bloodlines of Empire",
-      "Iberian horse origins"
+      "Iberian horse origins",
+      "history of the Iberian horse",
+      "Part I Bloodlines of Empire"
     ]
   },
   {
@@ -66,7 +82,9 @@ window.articleKeywordDatabase = [
       "Soul of Spain Part II",
       "The Vaquero",
       "Spanish vaquero",
-      "vaquero tradition"
+      "vaquero tradition",
+      "Part II The Vaquero",
+      "doma vaquera"
     ]
   },
   {
@@ -74,14 +92,18 @@ window.articleKeywordDatabase = [
     keywords: [
       "Fell Pony",
       "The Fell Pony",
-      "Cumbrian pony"
+      "Cumbrian pony",
+      "Fell ponies",
+      "native pony of Cumbria"
     ]
   },
   {
     url: "article-my-search-for-the-fell-pony.html",
     keywords: [
       "Search for the Fell Pony",
-      "my search for the fell pony"
+      "my search for the fell pony",
+      "journey to find the Fell Pony",
+      "Fell Pony travel story"
     ]
   },
   {
@@ -89,7 +111,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Falabella",
       "Falabella horse",
-      "Argentine miniature horse"
+      "Argentine miniature horse",
+      "miniature horse from Argentina",
+      "Falabella breed"
     ]
   },
   {
@@ -97,7 +121,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Marwari",
       "Marwari horse",
-      "curved ears horse"
+      "curved ears horse",
+      "Marwari breed",
+      "Indian Marwari horse"
     ]
   },
   {
@@ -105,7 +131,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Pushkar",
       "Pushkar Fair",
-      "Pushkar Camel Fair"
+      "Pushkar Camel Fair",
+      "Pushkar horse fair",
+      "Rajasthan horse fair"
     ]
   },
   {
@@ -114,7 +142,9 @@ window.articleKeywordDatabase = [
       "Tbourida",
       "fantasia",
       "Moroccan fantasia",
-      "powder game"
+      "powder game",
+      "Moroccan cavalry display",
+      "Tbourida charge"
     ]
   },
   {
@@ -122,7 +152,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Sandalwood pony",
       "Sandalwood Pony of Sumba",
-      "Sumba pony"
+      "Sumba pony",
+      "Sandalwood horse",
+      "Indonesia island horse"
     ]
   },
   {
@@ -130,7 +162,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Sumba",
       "Pasola",
-      "horses of Sumba"
+      "horses of Sumba",
+      "Sumba horse culture",
+      "Indonesian horse island"
     ]
   },
   {
@@ -138,7 +172,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Yakutia",
       "Yakut horse",
-      "Spirit Horses of Yakutia"
+      "Spirit Horses of Yakutia",
+      "Sakha horse",
+      "Arctic horse culture"
     ]
   },
   {
@@ -146,7 +182,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "Australian Stock Horse",
       "stock horse",
-      "Waler lineage"
+      "Waler lineage",
+      "Australian stockman horse",
+      "campdraft horse"
     ]
   },
   {
@@ -154,7 +192,9 @@ window.articleKeywordDatabase = [
     keywords: [
       "return of the horse",
       "rewilding with horses",
-      "horse rewilding"
+      "horse rewilding",
+      "rewilding horses",
+      "rewilding projects"
     ]
   },
   {
@@ -162,14 +202,18 @@ window.articleKeywordDatabase = [
     keywords: [
       "Billy Barge",
       "Billy Barge horse",
-      "Australian horseman"
+      "Australian horseman",
+      "outback horseman",
+      "horse handling in Australia"
     ]
   },
   {
     url: "article-bloodlines-borders.html",
     keywords: [
       "bloodlines and borders",
-      "bloodlines borders"
+      "bloodlines borders",
+      "horse bloodlines",
+      "equine bloodline history"
     ]
   }
 ];
