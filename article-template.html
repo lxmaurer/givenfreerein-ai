@@ -1,74 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article Title – Given Free Rein</title>
-  <meta name="description" content="Article summary or subtitle.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Article Title</title>
+  <link rel="stylesheet" href="article-template-v2.css">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="navbar">
-      <div class="site-title">Given Free Rein</div>
-      <ul class="nav-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/cultures.html">Cultures</a></li>
-        <li><a href="/breeds.html">Breeds</a></li>
-        <li><a href="/destinations.html">Destinations</a></li>
-        <li><a href="/gear-and-tack.html">Gear &amp; Tack</a></li>
-        <li><a href="/about.html">About</a></li>
-      </ul>
-      <div class="nav-social">
-        <a href="https://instagram.com/givenfreerein" target="_blank" aria-label="Instagram">IG</a>
-        <a href="https://facebook.com/givenfreerein" target="_blank" aria-label="Facebook">FB</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <header class="article-header">
-      <div class="container">
-        <img class="article-hero-image" src="images/hero-placeholder.jpg" alt="Article hero image" style="width:100%;max-height:420px;object-fit:cover;border-radius:12px;margin-bottom:2rem;">
-        <div class="article-meta">
-          <span class="article-category">Category</span>
-          <span class="article-region">Region</span>
+
+<div class="article-v2-related-card">
+          <img class="article-v2-related-thumb" src="images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg" alt="Rider in formal attire riding sidesaddle on an Appaloosa horse in an indoor arena">
+          <div class="article-v2-related-tag">Craftsmanship</div>
+          <h3><a href="#">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</a></h3>
+          <p>The side saddle was not a decorative tradition but a technical response to social constraint. This article traces its evolution from medieval Europe to its peak in British hunting.</p>
         </div>
-        <h1 class="article-title">Article Title</h1>
-        <p class="article-subtitle">Article subtitle or summary goes here.</p>
-        <div class="article-byline">
-          <div class="author-info">
-            <span class="author-name">By Author Name</span>
-            <span class="publish-date">Published in Category</span>
-          </div>
-          <div class="article-stats">
-            <span class="read-time">X min read</span>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="article-content">
-      <div class="container">
-        <div class="article-body">
-          <p class="drop-cap">First paragraph of the article goes here. This template is designed for editorial, magazine-style longform stories.</p>
-          <p>Continue your story content here. Add more paragraphs, images, and editorial elements as needed.</p>
+        <div class="article-v2-related-card">
+          <img class="article-v2-related-thumb" src="images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg" alt="Rider in formal attire riding sidesaddle on an Appaloosa horse in an indoor arena">
+          <div class="article-v2-related-tag">Craftsmanship</div>
+          <h3><a href="#">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</a></h3>
+          <p>The side saddle was not a decorative tradition but a technical response to social constraint. This article traces its evolution from medieval Europe to its peak in British hunting.</p>
         </div>
       </div>
     </section>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="/cultures.html">Cultures</a>
-        <a href="/breeds.html">Breeds</a>
-        <a href="/destinations.html">Destinations</a>
-        <a href="/gear-and-tack.html">Gear &amp; Tack</a>
-        <a href="/about.html">About</a>
-      </div>
-      <div class="footer-meta">&copy; 2026 Given Free Rein. Stories from around the world.</div>
+
+    <!-- Article Header Block: Title below hero image -->
+    <div class="article-v2-hero-title-wrap" style="text-align:center; margin: 2rem 0 0.5rem 0;">
+      <h1 class="article-v2-hero-title" style="margin-bottom: 0.5rem;">{{TITLE}}</h1>
+      <div class="article-v2-author" style="font-size: 1.1rem; color: #555;">{{BYLINE}}</div>
     </div>
-  </footer>
+    <!-- Standfirst -->
+    <section class="article-v2-standfirst-wrap">
+      <div class="article-v2-standfirst">{{STANDFIRST}}</div>
+    </section>
+    <!-- Byline Row (optional, can be removed if not needed) -->
+    <section class="article-v2-byline-row">
+      <!-- Additional byline or meta info can go here -->
+    </section>
+  </main>
+    <footer class="site-header" style="background: #2a2a2a; color: #c8c3ba; border-top: none; border-bottom: none;">
+      <nav class="navbar">
+        <div class="site-title" style="color: #fff;">Given Free Rein</div>
+        <ul class="nav-menu">
+          <li><a href="/index.html" style="color: #c8c3ba;">Home</a></li>
+          <li><a href="#" style="color: #c8c3ba;">Cultures</a></li>
+          <li><a href="#" style="color: #c8c3ba;">Breeds</a></li>
+          <li><a href="#" style="color: #c8c3ba;">Destinations</a></li>
+          <li><a href="#" style="color: #c8c3ba;">Craftsmanship</a></li>
+          <li><a href="/about.html" style="color: #c8c3ba;">About</a></li>
+        </ul>
+        <div class="nav-social">
+          <a href="https://instagram.com" class="nav-social" aria-label="Instagram" style="color: #c8c3ba;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="nav-social" aria-label="Facebook" style="color: #c8c3ba;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+  <script src="/js/article-link-map.js"></script>
+  <script src="/js/auto-link-articles.js"></script>
 </body>
 </html>

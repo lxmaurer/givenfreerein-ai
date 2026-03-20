@@ -1,438 +1,60 @@
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Given Free Rein - Home</title>
-</head>
-<body>
-    <header>
-        <div class="logo">Given Free Rein</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+Append a complete new CSS block to the bottom of `styles.css` for the new article template.
 
-    <main>
-        <section class="hero">
-            <img src="images/sidesaddle_sevilla.jpg" alt="Beautiful horses">
-            <div class="hero-text">
-                <h1>Discover the World of Horse Cultures</h1>
-            </div>
-        </section>
+Add styles for these selectors:
 
-        <section class="article-cards">
-            <article>
-                <img src="images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg" alt="Article image" style="width:100%;height:180px;object-fit:cover;border-radius:8px 8px 0 0;">
-                <h2><a href="article.html">Article Title 1</a></h2>
-                <p>Short excerpt of the article...</p>
-            </article>
-            <article>
-                <img src="images/escaramuza_women.jpg" alt="Article image" style="width:100%;height:180px;object-fit:cover;border-radius:8px 8px 0 0;">
-                <h2><a href="article.html">Article Title 2</a></h2>
-                <p>Short excerpt of the article...</p>
-            </article>
-            <!-- Add more articles as needed -->
-        </section>
-    </main>
+.article-page
+.article-hero
+.article-hero-image
+.article-hero::after
+.article-hero-overlay
+.article-kicker
+.article-hero-title
+.article-standfirst-wrap
+.article-standfirst-container
+.article-standfirst
+.article-byline
+.article-main
+.article-content
+.article-content p
+.article-content .article-intro
+.article-content h2
+.article-figure
+.article-figure img
+.article-figure figcaption
+.article-pullquote
+.article-pullquote blockquote
+.article-sidebar
+.sidebar-card
+.sidebar-card-soft
+.sidebar-label
+.sidebar-card h3
+.sidebar-card p
+.sidebar-input
+.sidebar-button
+.related-stories
+.related-stories-inner
+.related-stories h2
+.related-grid
+.related-card
+.related-card img
+.related-card-body
+.related-tag
+.related-card h3
+.related-card p
 
-    <footer>
-        <p>&copy; 2023 Given Free Rein</p>
-    </footer>
-</body>
-</html>
-File: article.html (Article Template)
-html
+Also include responsive breakpoints for max-width 980px and 640px.
 
-Collapse
-Save
-Copy
+Style goals:
+- warm neutral palette
+- serif editorial look
+- hero title on image
+- narrow reading column
+- sticky sidebar
+- rounded image corners
+- related story cards
+- mobile responsive
 
-Preview
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Article Title - Given Free Rein</title>
-</head>
-<body>
-    <header>
-        <div class="logo">Given Free Rein</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <article>
-            <h1>Article Title</h1>
-            <img src="path/to/article-hero.jpg" alt="Article Main Image">
-            <p>By Author Name | Published Date</p>
-            
-            <p>Main content of the article goes here...</p>
-            <p>Add more content, images, and other multimedia as needed...</p>
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Given Free Rein</p>
-    </footer>
-</body>
-</html>
-File: category.html (Category Page)
-html
-
-Collapse
-Save
-Copy
-
-Preview
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Category Name - Given Free Rein</title>
-</head>
-<body>
-    <header>
-        <div class="logo">Given Free Rein</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="category-header">
-            <h1>Category Name</h1>
-            <p>Description of this category...</p>
-        </section>
-
-        <section class="article-cards">
-            <article>
-                <img src="path/to/article-image.jpg" alt="Article image">
-                <h2><a href="article.html">Article Title 1</a></h2>
-                <p>Short excerpt of the article...</p>
-            </article>
-            <article>
-                <img src="path/to/article-image.jpg" alt="Article image">
-                <h2><a href="article.html">Article Title 2</a></h2>
-                <p>Short excerpt of the article...</p>
-            </article>
-            <!-- More articles can be added similarly -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Given Free Rein</p>
-    </footer>
-</body>
-</html>
-File: styles.css (Styling for All Pages)
-css
-
-Collapse
-Save
-Copy
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-⌄
-
+Important:
+- append to the bottom of the file
+- do not remove existing site-wide CSS
+- save the file
