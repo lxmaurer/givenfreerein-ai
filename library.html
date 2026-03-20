@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library – Given Free Rein</title>
+  <meta name="description" content="A searchable library of Given Free Rein articles covering horse cultures, breeds, craftsmanship, and destinations.">
+  <link rel="stylesheet" href="article-template-v2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="site-title">Given Free Rein</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultures.html">Cultures</a></li>
+        <li><a href="breeds.html">Breeds</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="craftsmanship.html">Craftsmanship</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.instagram.com/givenfreerein/" class="nav-social" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/people/Given-Free-Rein/61578737550878/" class="nav-social" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <style>
+    .library-hero {
+      width: 100%;
+      height: 520px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 0;
+    }
+    .library-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      display: block;
+      border-radius: 0 0 20px 20px;
+    }
+    .library-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.18), rgba(0,0,0,0.52));
+    }
+    .library-opening {
+      max-width: 1200px;
+      width: 100%;
+      margin: 2.2rem auto 0.7rem;
+      padding: 0 48px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .library-opening p {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      line-height: 1.7;
+      margin: 0 auto 1rem;
+      max-width: 1000px;
+      color: #6b5a45;
+    }
+    .library-opening .mission-line {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 1.9vw, 1.3rem);
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+    .library-rule {
+      width: 80px;
+      margin: 3rem auto;
+      border: none;
+      border-top: 1.5px solid var(--color-accent);
+      opacity: 0.65;
+    }
+    .library-main {
+      margin-bottom: 4.5rem;
+      padding-bottom: 2rem;
+      max-width: 1560px;
+    }
+    .library-toolbar {
+      background: linear-gradient(180deg, #fff 0%, #f8f4ee 100%);
+      border: 1px solid #ddd3c3;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(40, 28, 18, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .library-toolbar label {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.45rem;
+      color: #1a1a1a;
+    }
+    .library-toolbar-copy {
+      margin: 0 0 1rem;
+      color: #6b5a45;
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+    .library-search-wrap {
+      position: relative;
+    }
+    .library-search-wrap::before {
+      content: "";
+      position: absolute;
+      left: 1.15rem;
+      top: 50%;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #8b7355;
+      border-radius: 50%;
+      transform: translateY(-58%);
+      box-sizing: border-box;
+      opacity: 0.75;
+      pointer-events: none;
+    }
+    .library-search-wrap::after {
+      content: "";
+      position: absolute;
+      left: 2.15rem;
+      top: calc(50% + 0.35rem);
+      width: 9px;
+      height: 2px;
+      background: #8b7355;
+      transform: rotate(45deg);
+      border-radius: 999px;
+      opacity: 0.75;
+      pointer-events: none;
+    }
+    .library-search {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem 1.2rem 1rem 3.2rem;
+      border: 1px solid #cdbda6;
+      border-radius: 999px;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      background: rgba(255,255,255,0.92);
+      color: #1a1a1a;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+    .library-search:focus {
+      outline: none;
+      border-color: #8b7355;
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(139,115,85,0.14);
+    }
+    .library-count {
+      margin: 0.9rem 0 0;
+      color: #6b5a45;
+      font-size: 0.98rem;
+    }
+    .library-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 0.95rem;
+    }
+    .library-filter-btn {
+      border: 1px solid #cdbda6;
+      background: #fff;
+      color: #6b5a45;
+      border-radius: 999px;
+      padding: 0.45rem 0.9rem;
+      font-family: var(--font-serif);
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+    .library-filter-btn:hover,
+    .library-filter-btn:focus {
+      border-color: #8b7355;
+      color: #4f4030;
+      outline: none;
+    }
+    .library-filter-btn.is-active {
+      background: #8b7355;
+      border-color: #8b7355;
+      color: #fff;
+    }
+    .library-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 32px;
+      row-gap: 92px;
+      align-items: stretch;
+    }
+    .library-card {
+      height: 100%;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+    .library-card .article-v2-related-thumb {
+      height: 180px;
+    }
+    .library-card h3 {
+      margin-bottom: 0.45rem;
+    }
+    .library-card p {
+      flex: 1 1 auto;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+    .library-card-link {
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 0.95rem;
+      font-weight: 600;
+      color: #8b7355;
+      text-decoration: none;
+    }
+    .library-card-link:hover,
+    .library-card-link:focus {
+      text-decoration: underline;
+    }
+    .library-no-results {
+      display: none;
+      background: #fff;
+      border: 1px solid #e5e1d8;
+      border-radius: 14px;
+      padding: 1.4rem 1.5rem;
+      color: #6b5a45;
+      box-shadow: var(--shadow);
+    }
+    .library-sidebar {
+      position: sticky;
+      top: 2.5rem;
+    }
+    .library-sidebar ul {
+      padding-left: 1.1rem;
+      margin: 0;
+    }
+    .library-sidebar li + li {
+      margin-top: 0.55rem;
+    }
+    .library-sidebar-note {
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: #6b5a45;
+    }
+    @media (max-width: 1200px) {
+      .library-main {
+        max-width: 1200px;
+      }
+      .library-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .library-opening {
+        padding: 0 24px;
+      }
+    }
+    @media (max-width: 700px) {
+      .library-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <section class="library-hero">
+    <img src="images/sidesaddle_sevilla.jpg" alt="Given Free Rein article library hero image">
+  </section>
+
+  <div class="article-v2-hero-title-wrap">
+    <h1 class="article-v2-hero-title">The Library</h1>
+  </div>
+
+  <section class="library-opening">
+    <p>Every Given Free Rein story, collected in one place. Search by title, theme, place, or tradition to move through the journal as a library rather than a feed.</p>
+    <div class="mission-line">A searchable archive of horse cultures, breeds, craftsmanship, and destinations.</div>
+  </section>
+
+  <hr class="library-rule">
+
+  <section class="article-v2-main library-main">
+    <div class="article-v2-content" style="max-width: none; flex: 1 1 0;">
+      <div class="library-toolbar">
+        <label for="library-search">Search the library</label>
+        <p class="library-toolbar-copy">Find articles by title, region, category, or subject without scrolling the full archive.</p>
+        <div class="library-search-wrap">
+          <input id="library-search" class="library-search" type="search" placeholder="Search by title, category, place, or keyword">
+        </div>
+        <div class="library-filters" role="group" aria-label="Filter articles by category">
+          <button type="button" class="library-filter-btn is-active" data-filter="all">All</button>
+          <button type="button" class="library-filter-btn" data-filter="cultures">Cultures</button>
+          <button type="button" class="library-filter-btn" data-filter="breeds">Breeds</button>
+          <button type="button" class="library-filter-btn" data-filter="destinations">Destinations</button>
+          <button type="button" class="library-filter-btn" data-filter="craftsmanship">Craftsmanship</button>
+        </div>
+        <p id="library-count" class="library-count">18 articles in the library</p>
+      </div>
+
+      <div id="library-grid" class="library-grid">
+        <article class="article-v2-related-card library-card" data-search="andalusian heritage in motion breeds spain iberia dressage history power grace">
+          <img class="article-v2-related-thumb" src="images/andalusian/pexels-missi-kopf-12166602-6215857.jpg" alt="Andalusian horse in Spain">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-andalusian.html">The Andalusian Horse: Heritage in Motion</a></h3>
+          <p>Renowned for intelligence, balance, and expressive movement, the Andalusian carries its Iberian history from battlefields to modern dressage.</p>
+          <a class="library-card-link" href="article-andalusian.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="australian stock horse born to work breeds australia bush cattle outback working horse">
+          <img class="article-v2-related-thumb" src="images/australian-stock-horse/ash_hero.jpg" alt="Australian Stock Horse">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-australian-stock-horse.html">The Australian Stock Horse: Born to Work</a></h3>
+          <p>Forged by station life and distance, the Australian Stock Horse is one of the great working breeds of the pastoral world.</p>
+          <a class="library-card-link" href="article-australian-stock-horse.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="old billy barge horse working legend cultures britain canal industrial history">
+          <img class="article-v2-related-thumb" src="images/billy/billy_hero.jpg" alt="Old Billy the Barge Horse">
+          <div class="article-v2-related-tag">Cultures</div>
+          <h3><a href="article-billy-barge-horse.html">Old Billy the Barge Horse: The Long Life of a Working Legend</a></h3>
+          <p>A canal horse, an industrial witness, and a reminder of how deeply horse labour once powered Britain.</p>
+          <a class="library-card-link" href="article-billy-barge-horse.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="camargue horses breeds france wetlands gardians white semi-feral">
+          <img class="article-v2-related-thumb" src="images/camargue/camargue_.horses.jpg" alt="Camargue horses">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-camargue.html">The Horses of the Camargue</a></h3>
+          <p>Tough, white, and semi-feral, the Camargue horse remains inseparable from the wetlands and riding culture of southern France.</p>
+          <a class="library-card-link" href="article-camargue.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="comanche horse nation cultures americas plains warfare freedom native american">
+          <img class="article-v2-related-thumb" src="images/comanche/Comanche_hero.jpg" alt="Comanche horse culture">
+          <div class="article-v2-related-tag">Cultures</div>
+          <h3><a href="article-comanche.html">Lords of the Southern Plains: The Rise and Fall of the Comanche Horse Nation</a></h3>
+          <p>For the Comanche, the horse was the foundation of warfare, survival, territory, and freedom across the Southern Plains.</p>
+          <a class="library-card-link" href="article-comanche.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="escaramuza women horses tradition mexico arena cultures charro side saddle">
+          <img class="article-v2-related-thumb" src="images/escaramuza/escaramuza_women.jpg" alt="Escaramuza riders">
+          <div class="article-v2-related-tag">Cultures</div>
+          <h3><a href="article-escaramuza.html">Escaramuza: Women, Horses, and Tradition in Mexico's Arena</a></h3>
+          <p>Set to music and ridden at speed, Escaramuza reveals a Mexican equestrian tradition shaped by discipline, sidesaddle skill, and heritage.</p>
+          <a class="library-card-link" href="article-escaramuza.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="falabella argentina miniature horse breeds small scaled perfection">
+          <img class="article-v2-related-thumb" src="images/falabella/falabella_hero.jpg" alt="Falabella horse">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-falabella.html">The Falabella: Argentina's Miniature Horse, Scaled to Perfection</a></h3>
+          <p>Small in stature but culturally distinctive, the Falabella carries a story of selective breeding, rarity, and Argentine identity.</p>
+          <a class="library-card-link" href="article-falabella.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="fell pony northern hills breeds cumbria britain native working horse">
+          <img class="article-v2-related-thumb" src="images/fell-pony/fell_hero.jpg" alt="Fell Pony">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-fell-pony.html">The Fell Pony</a></h3>
+          <p>Shaped by weather, labour, and the uplands of Cumbria, the Fell Pony remains one of Britain's most enduring native breeds.</p>
+          <a class="library-card-link" href="article-fell-pony.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="marwari desert loyalty breeds india rajasthan curved ears">
+          <img class="article-v2-related-thumb" src="images/marwari/marwari_hero.png" alt="Marwari horse">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-marwari.html">The Marwari: Built for the Desert, Bred for Loyalty</a></h3>
+          <p>Known for its inward-curving ears and desert resilience, the Marwari stands at the center of Rajasthan's horse history.</p>
+          <a class="library-card-link" href="article-marwari.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="my search for the fell pony destinations cumbria travel field notes moors">
+          <img class="article-v2-related-thumb" src="images/my-search-for-the-fell-pony/search_hero.jpg" alt="Search for the Fell Pony">
+          <div class="article-v2-related-tag">Destinations</div>
+          <h3><a href="article-my-search-for-the-fell-pony.html">My Search for the Fell Pony</a></h3>
+          <p>A first-hand journey north into Cumbria in search of the Fell Pony, ending in a brief and hard-won sighting on the moors.</p>
+          <a class="library-card-link" href="article-my-search-for-the-fell-pony.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="pushkar horse camel fair destinations india marwari festival">
+          <img class="article-v2-related-thumb" src="images/pushkar/pushkar_hero.jpg" alt="Pushkar Horse and Camel Fair">
+          <div class="article-v2-related-tag">Destinations</div>
+          <h3><a href="article-pushkar.html">Pushkar Horse &amp; Camel Fair: A Sacred Stage for India's Marwari Majesty</a></h3>
+          <p>Part pilgrimage, part marketplace, Pushkar gathers horses, traders, pilgrims, and spectacle into one of India's great equestrian destinations.</p>
+          <a class="library-card-link" href="article-pushkar.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="return of the horse cultures extinction transformation ancient world">
+          <img class="article-v2-related-thumb" src="images/return-of-the-horse/roth_hero.jpg" alt="The Return of the Horse">
+          <div class="article-v2-related-tag">Cultures</div>
+          <h3><a href="article-return-of-the-horse.html">The Return of the Horse: From Extinction to Transformation</a></h3>
+          <p>A long-view story of disappearance, reintroduction, and the animal that changed how human societies moved and fought.</p>
+          <a class="library-card-link" href="article-return-of-the-horse.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="sandalwood pony indonesia spirited island horse breeds sumba">
+          <img class="article-v2-related-thumb" src="images/sandalwood/sandalwood_hero.jpg" alt="Sandalwood Pony">
+          <div class="article-v2-related-tag">Breeds</div>
+          <h3><a href="article-sandalwood-pony.html">The Sandalwood Pony: Indonesia's Spirited Island Horse</a></h3>
+          <p>Compact, agile, and culturally central, the Sandalwood Pony carries Sumba's history through ceremony, racing, and daily life.</p>
+          <a class="library-card-link" href="article-sandalwood-pony.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="spanish saddle craftsmanship guide tack through time saddle variants spain">
+          <img class="article-v2-related-thumb" src="images/spanish-saddle/spanish_saddle_hero.jpg" alt="Spanish saddle">
+          <div class="article-v2-related-tag">Craftsmanship</div>
+          <h3><a href="article-spanish-saddle.html">Tack Through Time: A Comprehensive Guide to the Spanish Saddle and Its Variants</a></h3>
+          <p>From working traditions to ceremonial forms, the Spanish saddle reveals how design evolves through use, region, and riding culture.</p>
+          <a class="library-card-link" href="article-spanish-saddle.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="spirit horses of yakutia cultures sakha arctic yakutian horse russia">
+          <img class="article-v2-related-thumb" src="images/spirit-horses-yakutia/yakutia_hero.jpg" alt="Yakutian horse">
+          <div class="article-v2-related-tag">Cultures</div>
+          <h3><a href="article-spirit-horses-of-yakutia.html">Spirit Horses of Yakutia</a></h3>
+          <p>In the Sakha Republic, the Yakutian horse is both Arctic survivor and spiritual companion, inseparable from local life and belief.</p>
+          <a class="library-card-link" href="article-spirit-horses-of-yakutia.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="sumba indonesia sandalwood pony still runs free destinations island horses pasola">
+          <img class="article-v2-related-thumb" src="images/sumba/sumba_hero.jpg" alt="Sumba horseback destination">
+          <div class="article-v2-related-tag">Destinations</div>
+          <h3><a href="article-sumba.html">Sumba, Indonesia: Where the Sandalwood Pony Still Runs Free</a></h3>
+          <p>A destination story from Sumba, where horses remain embedded in landscape, ceremony, racing, and everyday movement.</p>
+          <a class="library-card-link" href="article-sumba.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="tbourida fantasia morocco equestrian spectacle cultures musket charge barb arab-barb">
+          <img class="article-v2-related-thumb" src="images/tbourida/tbourida_hero.jpg" alt="Tbourida riders in Morocco">
+          <div class="article-v2-related-tag">Cultures</div>
+          <h3><a href="article-tbourida.html">The Pulse of Tbourida: Morocco's Equestrian Spectacle</a></h3>
+          <p>A ceremonial cavalry charge of rhythm, dust, gunpowder, and precision, Tbourida remains one of Morocco's most vivid horse traditions.</p>
+          <a class="library-card-link" href="article-tbourida.html">Read article</a>
+        </article>
+
+        <article class="article-v2-related-card library-card" data-search="side saddle craftsmanship women riding history evolution culture">
+          <img class="article-v2-related-thumb" src="images/sidesaddle/sidesaddle_hero.jpg" alt="Side saddle">
+          <div class="article-v2-related-tag">Craftsmanship</div>
+          <h3><a href="article-the-side-saddle.html">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</a></h3>
+          <p>A technical response to social constraint, the side saddle reveals how equestrian design is shaped by gender, custom, and function.</p>
+          <a class="library-card-link" href="article-the-side-saddle.html">Read article</a>
+        </article>
+      </div>
+
+      <div id="library-no-results" class="library-no-results">
+        No articles match that search yet. Try a title, place, category, or broader keyword.
+      </div>
+    </div>
+
+    <aside class="article-v2-sidebar library-sidebar">
+      <div class="article-v2-sidebar-card">
+        <h3>Latest Stories</h3>
+        <ul>
+          <li><a href="article-tbourida.html">The Pulse of Tbourida</a></li>
+          <li><a href="article-spirit-horses-of-yakutia.html">Spirit Horses of Yakutia</a></li>
+          <li><a href="article-fell-pony.html">The Fell Pony</a></li>
+        </ul>
+      </div>
+      <div class="article-v2-sidebar-card">
+        <h3>Newsletter</h3>
+        <p class="library-sidebar-note">Subscribe for more stories and updates from the archive as the library grows.</p>
+        <form class="article-v2-newsletter-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+  </section>
+
+  <footer class="site-header" style="background: #2a2a2a; color: #c8c3ba; border-top: none; border-bottom: none;">
+    <nav class="navbar">
+      <div class="site-title" style="color: #fff;">Given Free Rein</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" style="color: #c8c3ba;">Home</a></li>
+        <li><a href="cultures.html" style="color: #c8c3ba;">Cultures</a></li>
+        <li><a href="breeds.html" style="color: #c8c3ba;">Breeds</a></li>
+        <li><a href="destinations.html" style="color: #c8c3ba;">Destinations</a></li>
+        <li><a href="craftsmanship.html" style="color: #c8c3ba;">Craftsmanship</a></li>
+        <li><a href="about.html" style="color: #c8c3ba;">About</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://instagram.com" class="nav-social" aria-label="Instagram" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com" class="nav-social" aria-label="Facebook" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('library-search');
+    const cards = Array.from(document.querySelectorAll('.library-card'));
+    const count = document.getElementById('library-count');
+    const noResults = document.getElementById('library-no-results');
+    const filterButtons = Array.from(document.querySelectorAll('.library-filter-btn'));
+    let activeFilter = 'all';
+
+    const updateLibrary = () => {
+      const query = searchInput.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const haystack = (card.dataset.search || '').toLowerCase();
+        const tag = (card.querySelector('.article-v2-related-tag')?.textContent || '').trim().toLowerCase();
+        const queryMatch = !query || haystack.includes(query);
+        const filterMatch = activeFilter === 'all' || tag === activeFilter;
+        const matches = queryMatch && filterMatch;
+        card.style.display = matches ? '' : 'none';
+        if (matches) visible += 1;
+      });
+
+      count.textContent = `${visible} article${visible === 1 ? '' : 's'} in view`;
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+    };
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter || 'all';
+        filterButtons.forEach((b) => b.classList.toggle('is-active', b === button));
+        updateLibrary();
+      });
+    });
+
+    searchInput.addEventListener('input', updateLibrary);
+    updateLibrary();
+  </script>
+</body>
+</html>
