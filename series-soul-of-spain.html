@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul of Spain - Given Free Rein</title>
+  <meta name="description" content="A five-part Given Free Rein series tracing the horses, riders, craft, and legacy of Spain's equestrian culture.">
+  <link rel="stylesheet" href="article-template-v2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    .series-hero {
+      position: relative;
+      width: 100vw;
+      max-width: 100vw;
+      height: 520px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 64px;
+      background: linear-gradient(135deg, #1a0a0a 0%, #4a1515 30%, #8b2020 60%, #c4762a 100%);
+    }
+
+    .series-hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 32%;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .series-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 220px;
+      background: linear-gradient(to bottom, transparent, rgba(26, 10, 10, 0.82));
+      z-index: 1;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .series-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 760px;
+      padding: 0 32px;
+    }
+
+    .series-hero-eyebrow {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-style: italic;
+    }
+
+    .series-hero-eyebrow::before,
+    .series-hero-eyebrow::after {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: rgba(201, 168, 76, 0.5);
+    }
+
+    .series-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 5vw, 4.1rem);
+      font-weight: 700;
+      font-style: italic;
+      color: #8b1a1a;
+      line-height: 1.05;
+      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.18);
+      margin-bottom: 12px;
+    }
+
+    .series-hero-subtitle {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.76);
+      margin: 0;
+    }
+
+    .drop-cap::first-letter {
+      font-family: var(--font-display);
+      font-size: 4.2rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.78;
+      margin-right: 9px;
+      margin-top: 10px;
+      color: #8b1a1a;
+    }
+
+    .article-v2-standfirst {
+      font-style: italic;
+      font-family: var(--font-serif);
+    }
+
+    .sidebar-series-card {
+      background: #5a0f0f;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 1.8rem 1.5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sidebar-series-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.05;
+      background-image:
+        repeating-linear-gradient(45deg, #d4a017 0px, #d4a017 1px, transparent 1px, transparent 14px),
+        repeating-linear-gradient(-45deg, #d4a017 0px, #d4a017 1px, transparent 1px, transparent 14px);
+      border-radius: 12px;
+    }
+
+    .sidebar-series-card .card-eyebrow {
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(201, 168, 76, 0.75);
+      margin-bottom: 5px;
+      position: relative;
+    }
+
+    .sidebar-series-card .card-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: #fff;
+      margin-bottom: 16px;
+      position: relative;
+      line-height: 1.2;
+    }
+
+    .sidebar-parts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-parts li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+
+    .sidebar-parts li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-parts li.part-current {
+      color: #c9a84c;
+    }
+
+    .sidebar-parts li.part-published {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .sidebar-parts li.part-coming {
+      color: rgba(255, 255, 255, 0.28);
+    }
+
+    .part-roman {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 0.8rem;
+      color: #c9a84c;
+      width: 18px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-parts li.part-coming .part-roman {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .current-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #c9a84c;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .chapter-card {
+      background: #fff;
+      border: 1px solid #e5e1d8;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      min-height: 230px;
+    }
+
+    .chapter-kicker {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8b7355;
+      margin-bottom: 0.75rem;
+    }
+
+    .chapter-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      margin: 0 0 0.75rem;
+      color: #1a1a1a;
+    }
+
+    .chapter-card p {
+      color: #6b5a45;
+      margin: 0 0 1rem;
+      flex: 1 1 auto;
+    }
+
+    .chapter-link {
+      color: var(--color-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .chapter-link:hover {
+      text-decoration: underline;
+    }
+
+    .chapter-status {
+      color: #8b7355;
+      font-style: italic;
+      margin-top: auto;
+    }
+
+    @media (max-width: 980px) {
+      .chapter-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .series-hero {
+        height: 340px;
+        padding-bottom: 40px;
+      }
+
+      .series-hero-title {
+        font-size: 2.1rem;
+      }
+
+      .series-hero-content {
+        padding: 0 16px;
+      }
+
+      .chapter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="site-title">Given Free Rein</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultures.html">Cultures</a></li>
+        <li><a href="breeds.html">Breeds</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="craftsmanship.html">Craftsmanship</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://instagram.com" class="nav-social" aria-label="Instagram" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com" class="nav-social" aria-label="Facebook" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-v2-page">
+    <section class="series-hero">
+      <img src="images/soul-of-spain-part-1/hero.jpg" alt="Andalusian horse in warm Andalusian light">
+    </section>
+    <div class="series-hero-content" style="margin: 0 auto 2.5rem auto; text-align: center;">
+      <p class="series-hero-eyebrow">Given Free Rein Series</p>
+      <h1 class="series-hero-title">Soul of Spain</h1>
+      <p class="series-hero-subtitle">Five essays tracing the bloodlines, riders, craft, and rituals that shaped Spain's horse culture.</p>
+    </div>
+
+    <section class="article-v2-standfirst-wrap">
+      <div class="article-v2-standfirst">From the ancient Iberian horse to the vaquero tradition, royal schools, festival riders, and the global spread of Spanish horsemanship, Soul of Spain follows the ideas and horses that carried Spanish culture far beyond the peninsula itself.</div>
+    </section>
+
+    <section class="article-v2-byline-row">
+      <span class="article-v2-author">Series Overview</span>
+      <span class="article-v2-date">Published in Cultures</span>
+      <span class="article-v2-readtime">5 parts</span>
+    </section>
+
+    <section class="article-v2-main">
+      <div class="article-v2-content">
+        <p class="drop-cap">Soul of Spain is a long-form series about how horse culture became one of Spain's most enduring expressions of identity. It begins with bloodlines and conquest, but it does not stay there. The series moves through the saddle, the rider, the court, the arena, and the afterlife of Spanish horsemanship as it travelled outward into the wider world.</p>
+
+        <p>Across these five parts, the focus stays on the relationship between landscape, craft, and movement. The Iberian horse was shaped by geography and by empire. Spanish riding styles evolved through warfare, stock work, ceremony, and regional pride. Saddles, schools, and festivals each reveal a different way Spain taught horse and rider to move together.</p>
+
+        <figure class="article-v2-figure">
+          <img src="images/soul-of-spain-part-1/iberian-peninsula.png" alt="Map of the Iberian Peninsula">
+          <figcaption>The peninsula where the series begins: a meeting point of terrain, trade, faith, and horsemanship.</figcaption>
+        </figure>
+
+        <p>The result is not a single breed story or a single riding story, but a cultural one. Soul of Spain looks at the horse not as decoration to history, but as one of the ways Spain expressed power, discipline, elegance, and continuity across centuries.</p>
+      </div>
+
+      <aside class="article-v2-sidebar">
+        <div class="sidebar-series-card">
+          <p class="card-eyebrow">This Series</p>
+          <p class="card-title">Soul of Spain</p>
+          <ul class="sidebar-parts">
+            <li class="part-current">
+              <span class="part-roman">I</span>
+              Bloodlines of Empire
+              <span class="current-dot"></span>
+            </li>
+            <li class="part-coming">
+              <span class="part-roman">II</span>
+              The Vaquero
+            </li>
+            <li class="part-coming">
+              <span class="part-roman">III</span>
+              The Royal Touch
+            </li>
+            <li class="part-coming">
+              <span class="part-roman">IV</span>
+              The Festival Horse
+            </li>
+            <li class="part-coming">
+              <span class="part-roman">V</span>
+              Global Legacy
+            </li>
+          </ul>
+        </div>
+
+        <div class="article-v2-sidebar-card">
+          <h3>Series Details</h3>
+          <ul>
+            <li>Format: 5-part editorial series</li>
+            <li>Focus: Spanish horse culture</li>
+            <li>Region: Iberia and beyond</li>
+            <li>Author: Alex Maurer</li>
+          </ul>
+        </div>
+
+        <div class="article-v2-sidebar-card">
+          <h3>Newsletter</h3>
+          <p>Subscribe for more stories and updates.</p>
+          <form class="article-v2-newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <hr class="article-divider">
+
+    <section class="article-v2-related">
+      <h2>Series Chapters</h2>
+      <div class="chapter-grid">
+        <article class="chapter-card">
+          <div class="chapter-kicker">Part I</div>
+          <h3><a class="chapter-link" href="article-soul-of-spain-part-1.html">Bloodlines of Empire</a></h3>
+          <p>The ancient roots of the Iberian horse, from early peninsula stock to Moorish influence and the breeding traditions that shaped the Andalusian.</p>
+        </article>
+        <article class="chapter-card">
+          <div class="chapter-kicker">Part II</div>
+          <h3><a class="chapter-link" href="article-soul-of-spain-part-2.html">The Vaquero</a></h3>
+          <p>The Spanish vaquero, the riding systems of stock work, and the traditions that would eventually travel into the Americas.</p>
+        </article>
+        <article class="chapter-card">
+          <div class="chapter-kicker">Part III</div>
+          <h3>The Royal Touch</h3>
+          <p>The court, the school, and the refinement of equestrian display into a language of discipline, prestige, and classical form.</p>
+          <div class="chapter-status">Coming soon</div>
+        </article>
+        <article class="chapter-card">
+          <div class="chapter-kicker">Part IV</div>
+          <h3>The Festival Horse</h3>
+          <p>Romerias, ferias, and living public traditions where costume, tack, movement, and regional identity still ride side by side.</p>
+          <div class="chapter-status">Coming soon</div>
+        </article>
+        <article class="chapter-card">
+          <div class="chapter-kicker">Part V</div>
+          <h3>Global Legacy</h3>
+          <p>How Spanish horses, saddles, and riding ideas left Iberia and continued reshaping equestrian culture across continents.</p>
+          <div class="chapter-status">Coming soon</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-header" style="background: #2a2a2a; color: #c8c3ba; border-top: none; border-bottom: none;">
+    <nav class="navbar">
+      <div class="site-title" style="color: #fff;">Given Free Rein</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" style="color: #c8c3ba;">Home</a></li>
+        <li><a href="cultures.html" style="color: #c8c3ba;">Cultures</a></li>
+        <li><a href="breeds.html" style="color: #c8c3ba;">Breeds</a></li>
+        <li><a href="destinations.html" style="color: #c8c3ba;">Destinations</a></li>
+        <li><a href="craftsmanship.html" style="color: #c8c3ba;">Craftsmanship</a></li>
+        <li><a href="about.html" style="color: #c8c3ba;">About</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://instagram.com" class="nav-social" aria-label="Instagram" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com" class="nav-social" aria-label="Facebook" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+</body>
+</html>
