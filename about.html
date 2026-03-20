@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About – Given Free Rein</title>
-  <meta name="description" content="About Given Free Rein: documenting the human-horse bond, culture, and tradition worldwide.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="About Given Free Rein: long-form horse culture stories across traditions, landscapes, and living heritage worldwide.">
+  <link rel="stylesheet" href="article-template-v2.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,42 +15,221 @@
     <nav class="navbar">
       <div class="site-title">Given Free Rein</div>
       <ul class="nav-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/cultures.html">Cultures</a></li>
-        <li><a href="/breeds.html">Breeds</a></li>
-        <li><a href="/destinations.html">Destinations</a></li>
-        <li><a href="/gear-and-tack.html">Gear &amp; Tack</a></li>
-        <li><a href="/about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cultures.html">Cultures</a></li>
+        <li><a href="breeds.html">Breeds</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="craftsmanship.html">Craftsmanship</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
       <div class="nav-social">
-        <a href="https://instagram.com/givenfreerein" target="_blank" aria-label="Instagram">IG</a>
-        <a href="https://facebook.com/givenfreerein" target="_blank" aria-label="Facebook">FB</a>
+        <a href="https://www.instagram.com/givenfreerein/" class="nav-social" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/people/Given-Free-Rein/61578737550878/" class="nav-social" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
       </div>
     </nav>
   </header>
-  <main>
-    <section class="about-hero">
-      <h1 class="about-title">About Given Free Rein</h1>
-      <p class="about-intro">Given Free Rein documents the living bond between people and horses across cultures, landscapes, and time. Our editorial stories explore the traditions, skills, and communities that keep equestrian heritage alive worldwide.</p>
-    </section>
-    <section class="about-content">
-      <h2>Our Mission</h2>
-      <p>We believe that horses are more than animals—they are partners, teachers, and a living link to history. Through long-form stories, photography, and interviews, we celebrate the art, people, and places that define horse culture.</p>
-      <h2>Contact</h2>
-      <p>For story pitches, collaborations, or to share your own horse culture, email <a href="mailto:hello@givenfreerein.com">hello@givenfreerein.com</a>.</p>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="/cultures.html">Cultures</a>
-        <a href="/breeds.html">Breeds</a>
-        <a href="/destinations.html">Destinations</a>
-        <a href="/gear-and-tack.html">Gear &amp; Tack</a>
-        <a href="/about.html">About</a>
-      </div>
-      <div class="footer-meta">&copy; 2026 Given Free Rein. Stories from around the world.</div>
+  <style>
+    .about-hero {
+      width: 100%;
+      height: 520px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 0;
+    }
+    .about-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      border-radius: 0 0 20px 20px;
+      display: block;
+    }
+    .about-hero-overlay {
+      position: absolute;
+      left: 0; top: 0; right: 0; bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.60));
+      border-radius: 0 0 20px 20px;
+      z-index: 1;
+    }
+    .about-opening {
+      max-width: 1200px;
+      width: 100%;
+      margin: 2.2rem auto 0.7rem;
+      padding: 0 48px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .about-opening .opening-para {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      line-height: 1.7;
+      margin: 0 auto 1rem;
+      max-width: 1000px;
+      color: #6b5a45;
+    }
+    .about-opening .mission-line {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 1.9vw, 1.3rem);
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+    .about-rule {
+      width: 80px;
+      margin: 3rem auto;
+      border: none;
+      border-top: 1.5px solid var(--color-accent);
+      opacity: 0.65;
+    }
+    .about-main {
+      margin-bottom: 1.5rem;
+    }
+    .about-body {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+    .about-body p {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      line-height: 1.92;
+      margin-bottom: 2.2rem;
+      color: var(--color-text);
+    }
+    .about-body .closing-line {
+      font-style: italic;
+      color: #6b5a45;
+      margin-top: 3.5rem;
+      padding-top: 2.2rem;
+      border-top: 1px solid var(--color-border);
+      margin-bottom: 0;
+    }
+    .about-sidebar {
+      position: sticky;
+      top: 2.5rem;
+    }
+  </style>
+
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <img class="about-hero-img" src="images/sidesaddle_sevilla.jpg" alt="Seville sidesaddle riders">
+    <div class="about-hero-overlay"></div>
+  </section>
+
+  <div class="article-v2-hero-title-wrap">
+    <h1 class="article-v2-hero-title">About Given Free Rein</h1>
+  </div>
+
+  <section class="about-opening">
+    <p class="opening-para">Horses have shaped how humans move, fight, farm, celebrate, and survive. Their story isn't one story — it's thousands, spread across every continent and century, embedded in the languages, rituals, and identities of cultures that are still alive today.</p>
+    <div class="mission-line">Given Free Rein exists to tell those stories.</div>
+  </section>
+
+  <!-- DIVIDER -->
+  <hr class="about-rule">
+
+  <!-- BODY + SIDEBAR -->
+  <section class="article-v2-main about-main">
+    <div class="about-body article-v2-content">
+      <p>Not just the familiar ones. The history of horses and humans is far wider than the traditions that tend to dominate — beyond the European arena, the Western saddle, the canonical breeds. From the steppes of Central Asia to the arenas of Mexico, from the wetlands of the Camargue to the plains of the American Southwest, horses and the people who lived alongside them developed distinct ways of riding, working, making, and meaning. Those traditions deserve the same attention, the same depth, the same care.</p>
+      <p>That care extends to craft. The saddle, the bridle, the bit, the carriage, the ceremonial ornament — these are not just objects. They are the material record of a culture's relationship with the horse: the problems it solved, the values it expressed, the hands that made it. Craftsmanship and culture are not separate here. They are the same story told in different forms.</p>
+      <p>You don't need to have grown up around horses to find something here. You just need to be the kind of person who, once they start reading, wants to know more.</p>
+      <p>Each piece takes its time. The subjects — a breed, a tradition, a way of life built around horses — are layered enough to deserve it. The aim is always to understand something more clearly than before.</p>
+      <p class="closing-line">Horse culture is living history. Given Free Rein is here to explore more of it.</p>
     </div>
+
+    <aside class="article-v2-sidebar about-sidebar">
+      <div class="article-v2-sidebar-card">
+        <h3>Latest Stories</h3>
+        <ul>
+          <li><a href="article-tbourida.html">The Pulse of Tbourida: Morocco's Equestrian Spectacle</a></li>
+          <li><a href="article-spirit-horses-of-yakutia.html">Spirit Horses of Yakutia</a></li>
+          <li><a href="article-fell-pony.html">The Fell Pony</a></li>
+        </ul>
+      </div>
+      <div class="article-v2-sidebar-card">
+        <h3>Newsletter</h3>
+        <p>Subscribe for more stories and updates.</p>
+        <form class="article-v2-newsletter-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+  </section>
+
+  <!-- EXPLORE THE JOURNAL SECTION -->
+  <section class="explore-section">
+    <div class="section-header">
+      <h2>Explore the Journal</h2>
+    </div>
+    <div class="explore-grid">
+      <a class="explore-card" href="cultures.html">
+        <img class="explore-thumb" src="images/escaramuza/escaramuza_women.jpg" alt="Escaramuza riders">
+        <div class="explore-card-content">
+          <div class="explore-card-title">Cultures</div>
+          <div class="explore-card-subtitle">Horse traditions across the world</div>
+        </div>
+      </a>
+      <a class="explore-card" href="breeds.html">
+        <img class="explore-thumb" src="images/camargue/camargue_.horses.jpg" alt="Camargue horses">
+        <div class="explore-card-content">
+          <div class="explore-card-title">Breeds</div>
+          <div class="explore-card-subtitle">Legendary bloodlines &amp; their stories</div>
+        </div>
+      </a>
+      <a class="explore-card" href="destinations.html">
+        <img class="explore-thumb" src="images/sandalwood_pony.jpg" alt="Sandalwood pony">
+        <div class="explore-card-content">
+          <div class="explore-card-title">Destinations</div>
+          <div class="explore-card-subtitle">Journeys to equestrian places</div>
+        </div>
+      </a>
+      <a class="explore-card" href="craftsmanship.html">
+        <img class="explore-thumb" src="images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg" alt="Western sidesaddle craftsmanship">
+        <div class="explore-card-content">
+          <div class="explore-card-title">Craftsmanship</div>
+          <div class="explore-card-subtitle">Saddles, silverwork &amp; the art of horsemanship</div>
+        </div>
+      </a>
+    </div>
+    <div class="explore-all">
+      <a href="library.html" class="btn-outline">Explore All Articles →</a>
+    </div>
+  </section>
+  <footer class="site-header" style="background: #2a2a2a; color: #c8c3ba; border-top: none; border-bottom: none;">
+    <nav class="navbar">
+      <div class="site-title" style="color: #fff;">Given Free Rein</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" style="color: #c8c3ba;">Home</a></li>
+        <li><a href="cultures.html" style="color: #c8c3ba;">Cultures</a></li>
+        <li><a href="breeds.html" style="color: #c8c3ba;">Breeds</a></li>
+        <li><a href="destinations.html" style="color: #c8c3ba;">Destinations</a></li>
+        <li><a href="craftsmanship.html" style="color: #c8c3ba;">Craftsmanship</a></li>
+        <li><a href="about.html" style="color: #c8c3ba;">About</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://instagram.com" class="nav-social" aria-label="Instagram" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com" class="nav-social" aria-label="Facebook" style="color: #c8c3ba;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
   </footer>
 </body>
 </html>

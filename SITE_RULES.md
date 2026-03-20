@@ -19,3 +19,21 @@
 9. Avoid large layout changes like flex/grid rewrites unless instructed.
 
 10. If unsure, do not execute the change.
+reference-article.html is used only for layout analysis.
+
+Agents should extract:
+
+• article structure
+• content hierarchy
+• image placement rhythm
+• figure and caption structure
+
+Agents must NOT copy:
+
+• fonts
+• colors
+• margins
+• padding
+• Squarespace CSS classes
+The official article template is article-template.html.
+Legacy templates must not be used or referenced.

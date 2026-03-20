@@ -5,115 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Given Free Rein – Exploring Culture Through Horses</title>
     <meta name="description" content="Long-form stories documenting the human-horse bond across landscapes, traditions, and cultures worldwide.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article-template-v2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header / Navigation -->
     <header class="site-header">
-      <nav class="navbar">
-        <div class="site-title">Given Free Rein</div>
-        <ul class="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cultures.html">Cultures</a></li>
-          <li><a href="breeds.html">Breeds</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
-          <li><a href="gear-and-tack.html">Gear &amp; Tack</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <div class="nav-social">
-          <a href="https://instagram.com/givenfreerein" target="_blank" aria-label="Instagram">IG</a>
-          <a href="https://www.facebook.com/profile.php?id=61578737550878" target="_blank" aria-label="Facebook">FB</a>
-        </div>
-      </nav>
+        <nav class="navbar">
+            <div class="site-title">Given Free Rein</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cultures.html">Cultures</a></li>
+                <li><a href="breeds.html">Breeds</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="craftsmanship.html">Craftsmanship</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://instagram.com" class="nav-social" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" class="nav-social" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
     </header>
-
+    <main class="article-v2-page">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-inner">
-                <div class="hero-text">
-                    <span class="hero-label">EXPLORATION</span>
-                    <h1 class="hero-title">Exploring Culture Through Horses</h1>
-                    <p class="hero-desc">It's not just about horses. It's about people, place, and the history shared between them. Long-form stories from across the globe where horse culture is alive and thriving.</p>
-                </div>
-                <div class="hero-image">
-                    <img src="images/sidesaddle_sevilla.jpg" alt="Woman riding sidesaddle in traditional Spanish attire" loading="eager">
-                </div>
+        <section class="article-v2-hero">
+            <img class="article-v2-hero-img" src="images/sidesaddle_sevilla.jpg" alt="Woman riding sidesaddle in traditional Spanish attire">
+            <div class="article-v2-hero-gradient"></div>
+            <div class="article-v2-hero-title-wrap">
+                <h1 class="article-v2-hero-title">Exploring Culture Through Horses</h1>
             </div>
         </section>
-
+        <!-- Standfirst -->
+        <section class="article-v2-standfirst-wrap">
+            <div class="article-v2-standfirst">It's not just about horses. It's about people, place, and the history shared between them. Long-form stories from across the globe where horse culture is alive and thriving.</div>
+        </section>
         <!-- Featured Story Section -->
-        <section class="featured-story">
-            <div class="featured-inner">
-                <div class="featured-text">
-                    <span class="featured-label">Featured Story</span>
-                    <h2 class="featured-title">Lords of the Southern Plains: The Rise and Fall of the Comanche Horse Nation</h2>
-                    <p class="featured-excerpt">For the Comanche, the horse was not a means of travel but the foundation of warfare, survival, and freedom. On the Southern Plains, they forged a style of horsemanship so effective it reshaped power, territory, and life itself.</p>
-                    <div class="featured-meta">By Alex Maurer &middot; 10 min read &middot; Americas</div>
+        <section class="article-v2-byline-row">
+            <span class="article-v2-author">Featured Story</span>
+            <span class="article-v2-date">Americas</span>
+            <span class="article-v2-readtime">10 min read</span>
+        </section>
+        <section class="article-v2-main" style="align-items: stretch; display: flex;">
+            <div class="article-v2-content" style="display: flex; flex-direction: column; flex: 1 1 0; height: auto;">
+                <div class="featured-block" style="background: #fff; border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 2.5rem 2.5rem 2rem 2.5rem; margin-bottom: 2.5rem; flex: 1 1 0; display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
+                    <h2 style="margin-top: 0;"><a href="article-comanche.html" style="color: inherit; text-decoration: none;">Lords of the Southern Plains: The Rise and Fall of the Comanche Horse Nation</a></h2>
+                    <figure class="article-v2-figure">
+                        <img src="images/comanche/Comanche_hero.jpg" alt="Three Comanche men on horseback, historical photo (fallback)">
+                        <figcaption>For the Comanche, the horse was not a means of travel but the foundation of warfare, survival, and freedom. On the Southern Plains, they forged a style of horsemanship so effective it reshaped power, territory, and life itself.</figcaption>
+                    </figure>
+                    <a href="article-comanche.html" class="btn-read" style="display: inline-block;">Read the Article &#8594;</a>
                 </div>
-                <div class="featured-image">
-                    <img src="images/Comanche_warriors_-_1892.jpg" alt="Three Comanche men on horseback, historical photo (fallback)">
+            </div>
+            <aside class="article-v2-sidebar" style="display: flex; flex-direction: column; flex: 1 1 320px; max-width: 340px; min-width: 260px;">
+                <div class="article-v2-sidebar-card">
+                    <h3>Latest Stories</h3>
+                    <ul>
+                        <li><a href="article-escaramuza.html">Escaramuza: Women, Horses, and Tradition in Mexico's Arena</a></li>
+                        <li><a href="article-the-side-saddle.html">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</a></li>
+                    </ul>
+                </div>
+                <div class="article-v2-sidebar-card">
+                    <h3>Newsletter / Signup</h3>
+                    <p>Subscribe for new stories, culture, and horse world insights—delivered to your inbox.</p>
+                    <form class="article-v2-newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </aside>
+        </section>
+        <!-- Related Stories -->
+        <section class="article-v2-related">
+            <h2>Related Stories</h2>
+            <div class="article-v2-related-grid">
+                <div class="article-v2-related-card">
+                    <img class="article-v2-related-thumb" src="images/escaramuza/escaramuza_women.jpg" alt="Women in colorful dresses and sombreros riding horses in a Mexican arena">
+                    <div class="article-v2-related-tag">Cultures</div>
+                    <h3><a href="article-escaramuza.html">Escaramuza: Women, Horses, and Tradition in Mexico's Arena</a></h3>
+                    <p>Set to music and performed at full gallop, Escaramuza brings eight riders into the arena as a single unit. Riding sidesaddle, they move through crossing lines and sweeping turns with precision and control.</p>
+                </div>
+                <div class="article-v2-related-card">
+                    <img class="article-v2-related-thumb" src="images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg" alt="Rider in formal attire riding sidesaddle on an Appaloosa horse in an indoor arena">
+                    <div class="article-v2-related-tag">Craftsmanship</div>
+                    <h3><a href="article-the-side-saddle.html">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</a></h3>
+                    <p>The side saddle was not a decorative tradition but a technical response to social constraint. This article traces its evolution from medieval Europe to its peak in British hunting.</p>
+                </div>
+                <div class="article-v2-related-card">
+                    <img class="article-v2-related-thumb" src="/images/camargue/camargue_.horses.jpg" alt="Three white Camargue horses standing in water">
+                    <div class="article-v2-related-tag">Breeds</div>
+                    <h3><a href="/article-camargue.html">The Horses of the Camargue</a></h3>
+                    <p>Tough, white, and semi-feral, the Camargue horse is a living part of southern France's wetland culture. This article explores the breed's origins, traits, and working life with the Gardians.</p>
                 </div>
             </div>
         </section>
-
-        <!-- Latest Stories Section -->
-        <section class="latest-stories">
-            <h2 class="latest-heading">Latest Stories</h2>
-            <div class="stories-grid">
-                <article class="story-card">
-                    <a href="article-escaramuza.html">
-                        <img src="images/escaramuza_women.jpg" alt="Women in colorful dresses and sombreros riding horses in a Mexican arena">
-                        <div class="story-content">
-                            <span class="story-category">Cultures</span>
-                            <h3 class="story-title">Escaramuza: Women, Horses, and Tradition in Mexico's Arena</h3>
-                            <p class="story-excerpt">Set to music and performed at full gallop, Escaramuza brings eight riders into the arena as a single unit. Riding sidesaddle, they move through crossing lines and sweeping turns with precision and control.</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="story-card">
-                    <a href="article-the-side-saddle.html">
-                        <img src="images/Half_Arabian_Ladies_Western_Sidesaddle_(2668749735).jpg" alt="Rider in formal attire riding sidesaddle on an Appaloosa horse in an indoor arena">
-                        <div class="story-content">
-                            <span class="story-category">Gear &amp; Tack</span>
-                            <h3 class="story-title">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</h3>
-                            <p class="story-excerpt">The side saddle was not a decorative tradition but a technical response to social constraint. This article traces its evolution from medieval Europe to its peak in British hunting.</p>
-                        </div>
-                    </a>
-                </article>
+        <!-- Explore the Journal Section (with Unsplash images) -->
+        <section class="explore-section section">
+            <div class="section-header">
+                <h2>Explore the Journal</h2>
+                <div class="title-dash"></div>
             </div>
-        </section>
-
-        <!-- Newsletter Signup -->
-        <section class="newsletter">
-            <div class="newsletter-inner">
-                <h2 class="newsletter-title">Join The Ride</h2>
-                <p class="newsletter-desc">Subscribe for new stories, culture, and horse world insights—delivered to your inbox.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Sign Up</button>
-                </form>
-                <div class="newsletter-spacer"></div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-inner">
-                <div class="footer-links">
-                    <a href="cultures.html">Cultures</a>
-                    <a href="breeds.html">Breeds</a>
-                    <a href="destinations.html">Destinations</a>
-                    <a href="gear-and-tack.html">Gear &amp; Tack</a>
-                    <a href="about.html">About</a>
+            <div class="explore-grid">
+                <div class="explore-card">
+                    <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400&q=80" alt="Cultures" />
+                    <div class="explore-overlay">
+                        <div class="exp-title">Cultures</div>
+                        <div class="exp-sub">Horse traditions across the world</div>
+                    </div>
                 </div>
-                <div class="footer-meta">&copy; 2026 Given Free Rein. Stories from around the world.</div>
+                <div class="explore-card">
+                    <img src="https://images.unsplash.com/photo-1598977831736-0a9a0e7a2d2a?w=400&q=80" alt="Breeds" />
+                    <div class="explore-overlay">
+                        <div class="exp-title">Breeds</div>
+                        <div class="exp-sub">Legendary bloodlines &amp; their stories</div>
+                    </div>
+                </div>
+                <div class="explore-card">
+                    <img src="images/sandalwood_pony.jpg" alt="Destinations" />
+                    <div class="explore-overlay">
+                        <div class="exp-title">Destinations</div>
+                        <div class="exp-sub">Journeys to equestrian places</div>
+                    </div>
+                </div>
+                <div class="explore-card">
+                    <img src="https://images.unsplash.com/photo-1584036553516-bf83210aa16c?w=400&q=80" alt="Craftsmanship" />
+                    <div class="explore-overlay">
+                        <div class="exp-title">Craftsmanship</div>
+                        <div class="exp-sub">Saddles, silverwork &amp; the art of horsemanship</div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
-    </html>
-                    <h3>Given Free Rein</h3>
+            <div class="explore-all">
+                <a href="library.html" class="btn-outline">Explore All Articles →</a>
+            </div>
+        </section>
+        <!-- About Section (with Unsplash image) -->
+        <section class="about-section">
+            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1400&q=80" alt="About Given Free Rein" />
+            <div class="about-section-content">
+                <h2>About Given Free Rein</h2>
+                <p>Discover the stories, landscapes, and traditions that connect horses and humans around the globe.</p>
+                <a href="#" class="btn-read">Read the Story →</a>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="site-header" style="background: #2a2a2a; color: #c8c3ba; border-top: none; border-bottom: none;">
+        <nav class="navbar">
+            <div class="site-title" style="color: #fff;">Given Free Rein</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" style="color: #c8c3ba;">Home</a></li>
+                <li><a href="cultures.html" style="color: #c8c3ba;">Cultures</a></li>
+                <li><a href="breeds.html" style="color: #c8c3ba;">Breeds</a></li>
+                <li><a href="destinations.html" style="color: #c8c3ba;">Destinations</a></li>
+                <li><a href="craftsmanship.html" style="color: #c8c3ba;">Craftsmanship</a></li>
+                <li><a href="about.html" style="color: #c8c3ba;">About</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://instagram.com" class="nav-social" aria-label="Instagram" style="color: #c8c3ba;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" class="nav-social" aria-label="Facebook" style="color: #c8c3ba;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
+

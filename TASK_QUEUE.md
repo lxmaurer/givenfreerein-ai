@@ -16,3 +16,9 @@ Fixer Action:
 Update homepage article card links to point to the correct working article HTML files (e.g., article-comanche.html, etc.), or ensure the correct article pages exist at the expected URLs.
 
 Status: completed
+Next Session Tasks
+
+- Adjust hero spacing
+- Reduce hero border radius
+- Improve intro paragraph size
+- Implement article rhythm system
