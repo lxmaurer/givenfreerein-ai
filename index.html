@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .series-banner-link { text-decoration: none !important; }
+        .series-banner-link * { text-decoration: none !important; }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -49,26 +53,34 @@
         <section class="article-v2-standfirst-wrap">
             <div class="article-v2-standfirst">It's not just about horses. It's about people, place, and the history shared between them. Long-form stories from across the globe where horse culture is alive and thriving.</div>
         </section>
-        <!-- Featured Story Section -->
-        <section class="article-v2-byline-row">
-            <span class="article-v2-author">Featured Story</span>
-            <span class="article-v2-date">Americas</span>
-            <span class="article-v2-readtime">10 min read</span>
-        </section>
         <section class="article-v2-main" style="align-items: stretch; display: flex;">
             <div class="article-v2-content" style="display: flex; flex-direction: column; flex: 1 1 0; height: auto;">
-                <div class="featured-block" style="background: #fff; border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 2.5rem 2.5rem 2rem 2.5rem; margin-bottom: 2.5rem; flex: 1 1 0; display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
+                <!-- FEATURED ARTICLE — auto-populated from content/articles.json by js/featured-article.js -->
+                <!-- To feature a new article: add it to articles.json with today's published_date -->
+                <div id="featured-article" class="featured-block" style="background: #fff; border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 2.5rem 2.5rem 2rem 2.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; justify-content: flex-start;">
+                    <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.72rem; letter-spacing: 0.26em; text-transform: uppercase; color: #8b6f47; margin-bottom: 0.75rem;">Featured Story · Americas</div>
                     <h2 style="margin-top: 0;"><a href="article-comanche.html" style="color: inherit; text-decoration: none;">Lords of the Southern Plains: The Rise and Fall of the Comanche Horse Nation</a></h2>
                     <figure class="article-v2-figure">
                         <img src="images/comanche/Comanche_hero.jpg" alt="Three Comanche men on horseback, historical photo (fallback)">
                         <figcaption>For the Comanche, the horse was not a means of travel but the foundation of warfare, survival, and freedom. On the Southern Plains, they forged a style of horsemanship so effective it reshaped power, territory, and life itself.</figcaption>
                     </figure>
-                    <a href="article-comanche.html" class="btn-read" style="display: inline-block;">Read the Article &#8594;</a>
+                    <a href="article-comanche.html" class="btn-read" style="display: inline-block; margin-top: auto;">Read the Article &#8594;</a>
+                </div>
+                <!-- Soul of Spain Series Banner -->
+                <div style="position: relative; border-radius: 16px; overflow: hidden; min-height: 480px; box-shadow: 0 2px 16px rgba(0,0,0,0.18); margin-top: 1.5rem; background: #111;">
+                    <img src="images/soul-of-spain-part-1/hero.jpg" alt="Andalusian horse in warm Spanish light" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+                    <a href="series-soul-of-spain.html" aria-label="Read the Soul of Spain series" style="position: absolute; inset: 0; z-index: 3; display: block;"></a>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; padding: 2rem 2.5rem 2.2rem 2.5rem;">
+                        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.72rem; letter-spacing: 0.26em; text-transform: uppercase; color: #c4762a; margin-bottom: 0.6rem; text-shadow: 0 1px 6px rgba(0,0,0,0.8);">Featured Series · Five Parts</div>
+                        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 700; color: #fff; margin: 0 0 0.7rem 0; line-height: 1.15; text-shadow: 0 2px 8px rgba(0,0,0,0.85); border-bottom: none; padding-bottom: 0;">Soul of Spain</h2>
+                        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; color: rgba(255,255,255,0.9); line-height: 1.5; margin: 0 0 1.2rem 0; text-shadow: 0 1px 6px rgba(0,0,0,0.8);">Tracing the horses, riders, craft, and legacy of Spain's equestrian culture — from the bloodlines of empire to the vaquero.</p>
+                        <span style="display: inline-block; font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #fff; border: 1.5px solid rgba(255,255,255,0.5); border-radius: 6px; padding: 0.45rem 1rem; letter-spacing: 0.06em; text-shadow: 0 1px 4px rgba(0,0,0,0.7);">Read the Series →</span>
+                    </div>
                 </div>
             </div>
-            <aside class="article-v2-sidebar" style="display: flex; flex-direction: column; flex: 1 1 320px; max-width: 340px; min-width: 260px;">
+            <aside class="article-v2-sidebar" style="display: flex; flex-direction: column; flex: 0 0 300px; max-width: 300px; min-width: 240px;">
                 <div class="article-v2-sidebar-card">
-                    <h3>Latest Stories</h3>
+                    <h3>Latest Articles</h3>
                     <ul>
                         <li><a href="article-escaramuza.html">Escaramuza: Women, Horses, and Tradition in Mexico's Arena</a></li>
                         <li><a href="article-the-side-saddle.html">The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture</a></li>
@@ -84,9 +96,10 @@
                 </div>
             </aside>
         </section>
-        <!-- Related Stories -->
+
+        <!-- Latest Articles -->
         <section class="article-v2-related">
-            <h2>Related Stories</h2>
+            <h2>Latest Articles</h2>
             <div class="article-v2-related-grid">
                 <div class="article-v2-related-card">
                     <img class="article-v2-related-thumb" src="images/escaramuza/escaramuza_women.jpg" alt="Women in colorful dresses and sombreros riding horses in a Mexican arena">
@@ -107,6 +120,9 @@
                     <p>Tough, white, and semi-feral, the Camargue horse is a living part of southern France's wetland culture. This article explores the breed's origins, traits, and working life with the Gardians.</p>
                 </div>
             </div>
+            <div class="explore-all" style="margin-top: 2rem;">
+                <a href="library.html" class="btn-outline">Explore All Articles →</a>
+            </div>
         </section>
         <!-- Explore the Journal Section (with Unsplash images) -->
         <section class="explore-section section">
@@ -115,46 +131,43 @@
                 <div class="title-dash"></div>
             </div>
             <div class="explore-grid">
-                <div class="explore-card">
-                    <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400&q=80" alt="Cultures" />
+                <a class="explore-card" href="cultures.html">
+                    <img src="images/cultures_hero.jpg" alt="Cultures" />
                     <div class="explore-overlay">
                         <div class="exp-title">Cultures</div>
                         <div class="exp-sub">Horse traditions across the world</div>
                     </div>
-                </div>
-                <div class="explore-card">
-                    <img src="https://images.unsplash.com/photo-1598977831736-0a9a0e7a2d2a?w=400&q=80" alt="Breeds" />
+                </a>
+                <a class="explore-card" href="breeds.html">
+                    <img src="images/andalusian/caballos-jardin-400x284.jpg" alt="Breeds" />
                     <div class="explore-overlay">
                         <div class="exp-title">Breeds</div>
                         <div class="exp-sub">Legendary bloodlines &amp; their stories</div>
                     </div>
-                </div>
-                <div class="explore-card">
+                </a>
+                <a class="explore-card" href="destinations.html">
                     <img src="images/sandalwood_pony.jpg" alt="Destinations" />
                     <div class="explore-overlay">
                         <div class="exp-title">Destinations</div>
                         <div class="exp-sub">Journeys to equestrian places</div>
                     </div>
-                </div>
-                <div class="explore-card">
-                    <img src="https://images.unsplash.com/photo-1584036553516-bf83210aa16c?w=400&q=80" alt="Craftsmanship" />
+                </a>
+                <a class="explore-card" href="craftsmanship.html">
+                    <img src="images/craftsmanship_hero.jpg" alt="Craftsmanship" />
                     <div class="explore-overlay">
                         <div class="exp-title">Craftsmanship</div>
                         <div class="exp-sub">Saddles, silverwork &amp; the art of horsemanship</div>
                     </div>
-                </div>
-            </div>
-            <div class="explore-all">
-                <a href="library.html" class="btn-outline">Explore All Articles →</a>
+                </a>
             </div>
         </section>
         <!-- About Section (with Unsplash image) -->
         <section class="about-section">
-            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1400&q=80" alt="About Given Free Rein" />
+            <img src="images/about_hero.jpg" alt="About Given Free Rein" />
             <div class="about-section-content">
                 <h2>About Given Free Rein</h2>
                 <p>Discover the stories, landscapes, and traditions that connect horses and humans around the globe.</p>
-                <a href="#" class="btn-read">Read the Story →</a>
+                <a href="about.html" class="btn-read">Read the Story →</a>
             </div>
         </section>
         
@@ -184,6 +197,7 @@
             </div>
         </nav>
     </footer>
+    <script src="js/featured-article.js"></script>
 </body>
 </html>
 
