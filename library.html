@@ -560,6 +560,19 @@
     });
 
     searchInput.addEventListener('input', updateLibrary);
+
+    const params = new URLSearchParams(window.location.search);
+    const categoryParam = params.get('category');
+    if (categoryParam) {
+      filterButtons.forEach((btn) => {
+        if ((btn.dataset.filter || '').toLowerCase() === categoryParam.toLowerCase()) {
+          filterButtons.forEach((b) => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          activeFilter = btn.dataset.filter;
+        }
+      });
+    }
+
     updateLibrary();
   </script>
 </body>
