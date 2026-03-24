@@ -33,6 +33,18 @@
   if (!categoryMap.hasOwnProperty(pageName)) return;
   const category = categoryMap[pageName];
 
+  // Hide the featured block immediately to prevent flash of stale hardcoded content.
+  // It will be revealed (with a fade) once the correct data has been populated.
+  var featuredBlock = document.getElementById('featured-block');
+  if (featuredBlock) featuredBlock.style.opacity = '0';
+
+  function revealFeaturedBlock() {
+    if (featuredBlock) {
+      featuredBlock.style.transition = 'opacity 0.4s ease';
+      featuredBlock.style.opacity = '1';
+    }
+  }
+
   fetch('content/articles.json')
     .then(function (res) { return res.json(); })
     .then(function (data) {
@@ -100,8 +112,11 @@
           })
           .join('');
       }
+
+      revealFeaturedBlock();
     })
     .catch(function () {
-      // Fail silently — fallback hardcoded content remains visible
+      // Fail silently — reveal whatever hardcoded fallback content is in the HTML
+      revealFeaturedBlock();
     });
 }());
