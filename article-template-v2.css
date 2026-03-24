@@ -796,6 +796,16 @@ html, body {
   /* Prevent horizontal overflow */
   html, body { overflow-x: hidden; }
 
+  /* Compact navbar so title + hamburger both fit */
+  .navbar {
+    padding: 0.6rem 1rem;
+    gap: 0;
+  }
+  .site-title {
+    font-size: 1.35rem;
+    margin-right: 0;
+  }
+
   /* Show hamburger, hide social icons */
   .nav-toggle { display: flex; }
   .nav-social { display: none !important; }
