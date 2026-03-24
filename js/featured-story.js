@@ -33,10 +33,9 @@
   if (!categoryMap.hasOwnProperty(pageName)) return;
   const category = categoryMap[pageName];
 
-  // Hide the featured block immediately to prevent flash of stale hardcoded content.
-  // It will be revealed (with a fade) once the correct data has been populated.
+  // Reveal the featured block (with a fade) once the correct data has been populated.
+  // The block starts at opacity:0 via CSS to prevent flash of stale hardcoded content.
   var featuredBlock = document.getElementById('featured-block');
-  if (featuredBlock) featuredBlock.style.opacity = '0';
 
   function revealFeaturedBlock() {
     if (featuredBlock) {

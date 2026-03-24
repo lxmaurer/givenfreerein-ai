@@ -744,7 +744,13 @@ html, body {
   text-align: center;
 }
 
-/* Featured block: even spacing around the image, no h2 divider line */
+/* Featured block: hidden by default until js/featured-story.js populates and reveals it.
+   This prevents a flash of stale hardcoded content before the fetch completes. */
+#featured-block {
+  opacity: 0;
+}
+
+/* Even spacing around the image, no h2 divider line */
 .featured-block h2 {
   border-bottom: none;
   padding-bottom: 0;
