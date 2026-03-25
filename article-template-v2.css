@@ -430,6 +430,7 @@ html, body {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #8b7355;
+  margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 }
 .article-v2-related-card h3 {
@@ -537,8 +538,17 @@ html, body {
   .article-v2-sidebar {
     padding: 0 0.5rem;
   }
+  .article-v2-related {
+    padding: 2.5rem 0 2rem 0;
+    margin-top: 24px;
+  }
+  .article-v2-related h2 {
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+  }
   .article-v2-related-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 }
 .camargue-hero img {
