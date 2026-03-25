@@ -71,17 +71,6 @@
         titleLink.href = featured.local_file;
       }
 
-      // ── Mobile excerpt paragraph (shown below title on mobile, hidden on desktop) ──
-      var titleEl = document.getElementById('featured-title');
-      if (titleEl) {
-        var excerptP = document.getElementById('featured-excerpt') || document.createElement('p');
-        excerptP.id = 'featured-excerpt';
-        excerptP.textContent = featured.excerpt;
-        if (!document.getElementById('featured-excerpt')) {
-          titleEl.insertAdjacentElement('afterend', excerptP);
-        }
-      }
-
       // ── Hero image ───────────────────────────────────────────────────────
       var img = document.getElementById('featured-img');
       if (img) {
@@ -93,6 +82,14 @@
       var caption = document.getElementById('featured-caption');
       if (caption) {
         caption.textContent = featured.excerpt;
+        // Also populate the mobile-only excerpt <p> that sits after the figure
+        var excerptP = document.getElementById('featured-excerpt') || document.createElement('p');
+        excerptP.id = 'featured-excerpt';
+        excerptP.textContent = featured.excerpt;
+        if (!document.getElementById('featured-excerpt')) {
+          caption.closest('figure').insertAdjacentElement('afterend', excerptP);
+        }
+      }
       }
 
       // ── Read link ────────────────────────────────────────────────────────

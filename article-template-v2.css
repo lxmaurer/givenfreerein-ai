@@ -890,10 +890,12 @@ html, body {
     border-radius: 12px !important;
     border: 1px solid #e5e1d8 !important;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
-  /* Pull the figure's image to the card edges (negative margins cancel the 28px padding) */
+  /* Figure (image) floats to top edge — order 0 */
   #featured-block .article-v2-figure {
-    order: -1;
+    order: 0;
     margin: -28px -28px 16px -28px !important;
   }
   #featured-img {
@@ -903,32 +905,36 @@ html, body {
     border-radius: 12px 12px 0 0;
     display: block;
   }
-  /* Hide the figcaption under the image — excerpt is shown via #featured-excerpt instead */
+  /* Hide the figcaption — excerpt shown via #featured-excerpt instead */
   #featured-caption {
     display: none;
   }
-  /* Excerpt paragraph — shown below title, styled like .article-v2-related-card p */
+  /* Region/tag label — order 1, match .article-v2-related-tag */
+  #featured-region {
+    order: 1;
+    font-size: 0.8rem !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  /* Title — order 2, match .article-v2-related-card h3 */
+  #featured-title {
+    order: 2;
+    font-size: 1.15rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  /* Excerpt paragraph — order 3, shown below title */
   #featured-excerpt {
+    order: 3;
     display: block;
     color: #6b5a45;
     font-size: 1rem;
     margin: 0 0 0.5rem 0;
     line-height: 1.5;
   }
-  /* Region/tag label — match .article-v2-related-tag */
-  #featured-region {
-    font-size: 0.8rem !important;
-    letter-spacing: 2px !important;
-    margin-bottom: 0.5rem !important;
-  }
-  /* Title — match .article-v2-related-card h3 */
-  #featured-title {
-    font-size: 1.15rem !important;
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
-  }
-  /* Read link — compact spacing */
+  /* Read link — order 4, compact spacing */
   #featured-read-link {
+    order: 4;
     font-size: 0.9rem !important;
     margin-top: 0.75rem !important;
   }
