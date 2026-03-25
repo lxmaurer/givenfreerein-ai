@@ -84,6 +84,15 @@
         caption.textContent = featured.excerpt;
       }
 
+      // ── Mobile excerpt paragraph (shown in card layout, hidden on desktop) ──
+      var titleEl = document.getElementById('featured-title');
+      if (titleEl && !document.getElementById('featured-excerpt')) {
+        var excerptP = document.createElement('p');
+        excerptP.id = 'featured-excerpt';
+        excerptP.textContent = featured.excerpt || '';
+        titleEl.insertAdjacentElement('afterend', excerptP);
+      }
+
       // ── Read link ────────────────────────────────────────────────────────
       var readLink = document.getElementById('featured-read-link');
       if (readLink) {
