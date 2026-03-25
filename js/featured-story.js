@@ -87,9 +87,11 @@
         excerptP.id = 'featured-excerpt';
         excerptP.textContent = featured.excerpt;
         if (!document.getElementById('featured-excerpt')) {
-          caption.closest('figure').insertAdjacentElement('afterend', excerptP);
+          var figureEl = caption.closest('figure');
+          if (figureEl) {
+            figureEl.insertAdjacentElement('afterend', excerptP);
+          }
         }
-      }
       }
 
       // ── Read link ────────────────────────────────────────────────────────
