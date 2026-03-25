@@ -744,6 +744,24 @@ html, body {
   text-align: center;
 }
 
+@media (max-width: 700px) {
+  .explore-grid {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px !important;
+    padding-bottom: 12px;
+  }
+  .explore-card {
+    min-width: 80vw;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    height: 240px;
+  }
+}
+
 /* Featured block: hidden by default until js/featured-story.js populates and reveals it.
    This prevents a flash of stale hardcoded content before the fetch completes. */
 #featured-block {
@@ -860,5 +878,46 @@ html, body {
   .article-v2-content {
     max-width: 100% !important;
     min-width: 0 !important;
+  }
+
+  /* Featured block → card format matching latest article cards */
+  #featured-block {
+    padding: 28px !important;
+    border-radius: 12px !important;
+    border: 1px solid #e5e1d8 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+  }
+  /* Pull the figure's image to the card edges (negative margins cancel the 28px padding) */
+  #featured-block .article-v2-figure {
+    order: -1;
+    margin: -28px -28px 16px -28px !important;
+  }
+  #featured-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+  }
+  /* Hide the figcaption under the image — excerpt isn't shown in card format */
+  #featured-caption {
+    display: none;
+  }
+  /* Region/tag label — match .article-v2-related-tag */
+  #featured-region {
+    font-size: 0.8rem !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  /* Title — match .article-v2-related-card h3 */
+  #featured-title {
+    font-size: 1.15rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  /* Read link — compact spacing */
+  #featured-read-link {
+    font-size: 0.9rem !important;
+    margin-top: 0.75rem !important;
   }
 }
