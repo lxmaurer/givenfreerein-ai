@@ -900,17 +900,21 @@ html, body {
     margin: 0 !important;
     width: 100% !important;
     align-items: stretch !important;
+    display: block !important;
   }
   /* Match article-v2-related-thumb exactly */
   #featured-img {
     width: 100% !important;
+    min-width: 100% !important;
     max-width: 100% !important;
     height: 200px !important;
     object-fit: cover !important;
+    object-position: center !important;
     display: block !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     margin: 0 !important;
+    align-self: stretch !important;
   }
   #featured-caption { display: none !important; }
   #featured-region {
