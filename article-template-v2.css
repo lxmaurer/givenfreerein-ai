@@ -902,6 +902,20 @@ html, body {
     min-width: 0 !important;
   }
 
+  /* ── Latest Articles section: match card-to-card spacing throughout ── */
+  .article-v2-related {
+    padding-top: 0 !important;
+    margin-top: 40px !important;
+  }
+  .article-v2-related h2 {
+    margin-top: 0 !important;
+    margin-bottom: 40px !important;
+  }
+  .article-v2-related-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
   /* ── Hide byline row on mobile (region label moves inside the card) ── */
   .article-v2-byline-row { display: none !important; }
 
