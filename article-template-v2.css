@@ -910,9 +910,14 @@ html, body {
   }
   .explore-section {
     padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
   .explore-section .section-header h2 {
     margin-top: 0 !important;
+  }
+  .explore-grid {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
   .article-v2-related h2 {
     margin-top: 0 !important;
