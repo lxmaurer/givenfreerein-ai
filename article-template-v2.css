@@ -767,10 +767,6 @@ html, body {
 #featured-block {
   opacity: 0;
 }
-/* Excerpt paragraph injected by featured-story.js — desktop hides it (figcaption is used instead) */
-#featured-excerpt {
-  display: none;
-}
 
 /* Even spacing around the image, no h2 divider line */
 .featured-block h2 {
@@ -882,60 +878,5 @@ html, body {
   .article-v2-content {
     max-width: 100% !important;
     min-width: 0 !important;
-  }
-
-  /* Featured block → card format matching latest article cards */
-  #featured-block {
-    padding: 28px !important;
-    border-radius: 12px !important;
-    border: 1px solid #e5e1d8 !important;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  /* Figure (image) floats to top edge — order 0 */
-  #featured-block .article-v2-figure {
-    order: 0;
-    margin: -28px -28px 16px -28px !important;
-  }
-  #featured-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-    display: block;
-  }
-  /* Hide the figcaption — excerpt shown via #featured-excerpt instead */
-  #featured-caption {
-    display: none;
-  }
-  /* Region/tag label — order 1, match .article-v2-related-tag */
-  #featured-region {
-    order: 1;
-    font-size: 0.8rem !important;
-    letter-spacing: 2px !important;
-    margin-bottom: 0.5rem !important;
-  }
-  /* Title — order 2, match .article-v2-related-card h3 */
-  #featured-title {
-    order: 2;
-    font-size: 1.15rem !important;
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
-  }
-  /* Excerpt paragraph — order 3, shown below title */
-  #featured-excerpt {
-    order: 3;
-    display: block;
-    color: #6b5a45;
-    font-size: 1rem;
-    margin: 0 0 0.5rem 0;
-    line-height: 1.5;
-  }
-  /* Read link — order 4, compact spacing */
-  #featured-read-link {
-    order: 4;
-    font-size: 0.9rem !important;
-    margin-top: 0.75rem !important;
   }
 }

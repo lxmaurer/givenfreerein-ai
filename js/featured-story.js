@@ -82,16 +82,6 @@
       var caption = document.getElementById('featured-caption');
       if (caption) {
         caption.textContent = featured.excerpt;
-        // Also populate the mobile-only excerpt <p> that sits after the figure
-        var excerptP = document.getElementById('featured-excerpt') || document.createElement('p');
-        excerptP.id = 'featured-excerpt';
-        excerptP.textContent = featured.excerpt;
-        if (!document.getElementById('featured-excerpt')) {
-          var figureEl = caption.closest('figure');
-          if (figureEl) {
-            figureEl.insertAdjacentElement('afterend', excerptP);
-          }
-        }
       }
 
       // ── Read link ────────────────────────────────────────────────────────
