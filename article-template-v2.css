@@ -892,6 +892,9 @@ html, body {
     min-width: 0 !important;
   }
 
+  /* ── Hide byline row on mobile (region label moves inside the card) ── */
+  .article-v2-byline-row { display: none !important; }
+
   /* ── Featured block: card layout on mobile ──────────────────────────── */
   #featured-block {
     padding: 28px !important;
@@ -901,6 +904,8 @@ html, body {
     display: flex !important;
     flex-direction: column !important;
     box-shadow: var(--shadow) !important;
+    height: auto !important;
+    flex: none !important;
   }
   /* Figure sits inside card padding — naturally inset like related cards */
   #featured-block .article-v2-figure {
