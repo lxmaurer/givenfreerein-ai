@@ -767,6 +767,10 @@ html, body {
 #featured-block {
   opacity: 0;
 }
+/* Excerpt paragraph injected by featured-story.js — desktop hides it (figcaption is used instead) */
+#featured-excerpt {
+  display: none;
+}
 
 /* Even spacing around the image, no h2 divider line */
 .featured-block h2 {
@@ -899,9 +903,17 @@ html, body {
     border-radius: 12px 12px 0 0;
     display: block;
   }
-  /* Hide the figcaption under the image — excerpt isn't shown in card format */
+  /* Hide the figcaption under the image — excerpt is shown via #featured-excerpt instead */
   #featured-caption {
     display: none;
+  }
+  /* Excerpt paragraph — shown below title, styled like .article-v2-related-card p */
+  #featured-excerpt {
+    display: block;
+    color: #6b5a45;
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.5;
   }
   /* Region/tag label — match .article-v2-related-tag */
   #featured-region {
