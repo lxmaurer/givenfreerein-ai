@@ -886,22 +886,31 @@ html, body {
 
   /* ── Featured block: card layout on mobile ──────────────────────────── */
   #featured-block {
-    padding: 0 !important;
+    padding: 28px !important;
     border: 1px solid #e5e1d8 !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     display: flex !important;
     flex-direction: column !important;
+    box-shadow: var(--shadow) !important;
   }
+  /* Bleed figure to card edges — negative margin mirrors the card padding */
   #featured-block .article-v2-figure {
     order: -1;
-    margin: 0 !important;
+    margin: -28px -28px 16px -28px !important;
+    width: calc(100% + 56px) !important;
+    align-items: stretch !important;
   }
+  /* Match article-v2-related-thumb: full-width, fixed height, no rounded bottom */
   #featured-img {
     width: 100% !important;
+    max-width: 100% !important;
     height: 200px !important;
     object-fit: cover !important;
     display: block !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
   }
   #featured-caption { display: none !important; }
   #featured-region {
@@ -911,13 +920,13 @@ html, body {
     font-weight: 700 !important;
     text-transform: uppercase !important;
     color: #8b7355 !important;
-    margin: 1rem 1.25rem 0.25rem !important;
+    margin: 0 0 0.25rem !important;
     padding: 0 !important;
   }
   #featured-title {
     order: 2;
     font-size: 1.15rem !important;
-    margin: 0 1.25rem 0.5rem !important;
+    margin: 0 0 0.5rem !important;
     padding: 0 !important;
   }
   #featured-excerpt {
@@ -925,12 +934,12 @@ html, body {
     display: block !important;
     color: #6b5a45;
     font-size: 1rem;
-    margin: 0 1.25rem 0.5rem !important;
+    margin: 0 0 0.5rem !important;
     line-height: 1.5;
   }
   #featured-read-link {
     order: 4;
-    margin: 0.5rem 1.25rem 1.25rem !important;
+    margin: 0.5rem 0 0 !important;
     font-size: 0.9rem !important;
   }
 }
