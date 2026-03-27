@@ -905,7 +905,7 @@ html, body {
   /* ── Latest Articles section: match card-to-card spacing throughout ── */
   .article-v2-related {
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 72px !important;
     margin-top: 40px !important;
   }
   .explore-section {
