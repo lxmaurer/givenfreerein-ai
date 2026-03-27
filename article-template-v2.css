@@ -1,3 +1,22 @@
+/* Compact featured card for Destinations page */
+.featured-block-destinations {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+}
+.featured-block-destinations .article-v2-figure {
+  margin: 0 0 1rem 0 !important;
+}
+.featured-block-destinations #featured-img {
+  width: 60% !important;
+  max-width: 320px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.07) !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+.featured-block-destinations #featured-caption {
+  font-size: 0.95rem !important;
+  margin-top: 6px !important;
+}
 /* Editorial link styling for article content */
 .article-v2-content a {
   color: inherit;
@@ -580,15 +599,13 @@ html, body {
 .section-header .title-dash { display: none; }
 .explore-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   margin-bottom: 36px;
-}
-.explore-grid {
-  max-width: 1200px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  gap: 40px;
+  padding: 0 8px;
 }
 .explore-card {
   position: relative;
@@ -764,23 +781,6 @@ html, body {
   text-align: center;
 }
 
-@media (max-width: 700px) {
-  .explore-grid {
-    display: flex !important;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 20px !important;
-    padding-bottom: 12px;
-  }
-  .explore-card {
-    min-width: 80vw;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    height: 240px;
-  }
-}
 
 /* Featured block: hidden by default until js/featured-story.js populates and reveals it.
    This prevents a flash of stale hardcoded content before the fetch completes. */
