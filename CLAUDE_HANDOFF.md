@@ -9,7 +9,7 @@ Copy and paste this into Claude at the start of a session:
 ```
 You are helping on the Given Free Rein website project.
 
-Project root:
+Project root:blob:vscode-file://vscode-app/ff7f0adb-f6d7-4fbc-b48f-6286a11d75eb
 /Users/cassandramaurer/givenfreerein-ai
 
 Current goals:

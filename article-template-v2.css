@@ -373,7 +373,8 @@ html, body {
 .article-v2-related {
   background: var(--color-bg);
   padding: 4.5rem 0 3.5rem 0;
-    margin-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 56px;
 }
 .article-v2-related h2 {
   text-align: center;
@@ -391,6 +392,7 @@ html, body {
   max-width: 1200px;
   margin: 0 auto;
 }
+.carousel-dots { display: none; }
 .article-v2-related-card {
   background: #fff;
   border: 1px solid #e5e1d8;
@@ -730,6 +732,14 @@ html, body {
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .article-v2-related {
+    margin-bottom: 0 !important;
+  }
+
+  .explore-section .section-header h2 {
+    margin-top: 0 !important;
+  }
 }
 
 /* Align Explore the Journal section header with Related Stories */
@@ -852,9 +862,8 @@ html, body {
     margin-right: 0;
   }
 
-  /* Show hamburger, hide social icons */
+  /* Show hamburger */
   .nav-toggle { display: flex; }
-  .nav-social { display: none !important; }
 
   /* Collapse nav to hidden dropdown */
   .nav-menu {
@@ -905,12 +914,12 @@ html, body {
   /* ── Latest Articles section: match card-to-card spacing throughout ── */
   .article-v2-related {
     padding-top: 0 !important;
-    padding-bottom: 72px !important;
+    padding-bottom: 20px !important;
     margin-top: 40px !important;
   }
   .explore-section {
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
+    padding-top: 20px !important;
+    padding-bottom: 44px !important;
   }
   .explore-section .section-header h2 {
     margin-top: 0 !important;
@@ -921,11 +930,46 @@ html, body {
   }
   .article-v2-related h2 {
     margin-top: 0 !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 20px !important;
   }
   .article-v2-related-grid {
-    grid-template-columns: 1fr !important;
-    gap: 40px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px !important;
+    padding-bottom: 12px !important;
+    align-items: stretch !important;
+  }
+  .article-v2-related-card {
+    min-width: 82vw !important;
+    max-width: 82vw !important;
+    width: 82vw !important;
+    flex: 0 0 82vw !important;
+    scroll-snap-align: start !important;
+    box-sizing: border-box !important;
+    height: 614px !important;
+  }
+  .article-v2-related-card .article-v2-related-thumb {
+    height: 160px !important;
+  }
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .carousel-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  .carousel-dot.active {
+    background: var(--color-accent, #8b5e3c);
   }
 
   /* ── Hide byline row on mobile (region label moves inside the card) ── */
