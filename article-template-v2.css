@@ -1,3 +1,9 @@
+/* Force remove box-shadow from Explore cards on mobile with high specificity */
+@media (max-width: 640px) {
+  body .explore-card {
+    box-shadow: none !important;
+  }
+}
 
 # --- Move mobile override to end of file ---
 .explore-card {
