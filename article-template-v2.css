@@ -622,22 +622,23 @@ html, body {
 }
 .section-header .title-dash { display: none; }
 .explore-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  margin-bottom: 36px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 8px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 24px;
+   margin-bottom: 36px;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 8px;
 }
 .explore-card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  height: 265.625px; /* 212.5px * 1.25 = 265.625px */
-  border-radius: 12px;
-  box-shadow: var(--shadow, 0 2px 16px rgba(0,0,0,0.08));
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   height: 265.625px;
+   border-radius: 12px;
+   box-shadow: var(--shadow, 0 2px 16px rgba(0,0,0,0.08));
+   border: none;
 }
 .explore-card img {
   width: 100%;
@@ -759,12 +760,13 @@ html, body {
 .section,
 .explore-section,
 .about-section,
-.article-v2-related,
-.article-v2-main {
-  padding-left: 48px;
-  padding-right: 48px;
-  box-sizing: border-box;
-}
+  border-radius: 16px;
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  background: #111;
+  border: none !important;
+  box-shadow: none !important;
 @media (max-width: 700px) {
   .section,
   .explore-section,
