@@ -3,11 +3,18 @@
  * handles open/close on mobile viewports. Works alongside the mobile CSS in
  * article-template-v2.css (the button is hidden on desktop via CSS).
  */
+
 (function () {
   function init() {
-    var navbar = document.querySelector('.navbar');
-    var navMenu = document.querySelector('.nav-menu');
+    // Only target the header navbar (the first .site-header .navbar)
+    var header = document.querySelector('header.site-header');
+    if (!header) return;
+    var navbar = header.querySelector('.navbar');
+    var navMenu = header.querySelector('.nav-menu');
     if (!navbar || !navMenu) return;
+
+    // Prevent duplicate hamburger
+    if (navbar.querySelector('.nav-toggle')) return;
 
     // Create the hamburger button
     var toggle = document.createElement('button');
