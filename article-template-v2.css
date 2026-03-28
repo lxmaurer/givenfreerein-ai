@@ -1,3 +1,33 @@
+/* Sidebar series part links gold color for published/current */
+.sidebar-parts li.part-current a,
+.sidebar-parts li.part-published a {
+  color: #c9a84c !important;
+  text-decoration: none;
+}
+.sidebar-parts li.part-current a:hover,
+.sidebar-parts li.part-published a:hover,
+.sidebar-parts li.part-current a:focus,
+.sidebar-parts li.part-published a:focus {
+  text-decoration: underline;
+}
+.article-v2-related {
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important;
+}
+/* Ensure correct spacing for homepage-stories-section */
+#homepage-stories-section {
+  margin-bottom: 0 !important;
+  padding-bottom: 44px !important;
+}
+/* Reduce gap between Latest Articles and Explore the Journal */
+.explore-section {
+  padding-top: 44px;
+  margin-top: 0;
+}
+.article-v2-related {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 @media (max-width: 768px) {
   .nav-social a {
     padding: 0 !important;
