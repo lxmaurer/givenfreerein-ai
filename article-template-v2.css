@@ -1,19 +1,19 @@
 @media (max-width: 768px) {
-  .about-section {
-    height: 220px !important;
-  }
   .about-section-content {
     position: absolute !important;
-    bottom: 0 !important;
+    top: 1rem !important;
+    bottom: auto !important;
     left: 0 !important;
     right: 0 !important;
     padding: 1rem !important;
   }
   .about-section-content h2 {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
+    color: #fff !important;
   }
   .about-section-content p {
-    font-size: 0.85rem !important;
+    font-size: 0.95rem !important;
+    color: #fff !important;
     margin: 0 !important;
   }
 }
