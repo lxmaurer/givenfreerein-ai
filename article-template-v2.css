@@ -24,10 +24,14 @@
     color: #ffffff !important;
     font-size: 1.4rem !important;
     font-weight: 700 !important;
+    align-self: center !important;
+    text-align: center !important;
   }
   .explore-overlay .exp-sub {
     color: #ffffff !important;
     font-size: 0.95rem !important;
+    align-self: center !important;
+    text-align: center !important;
   }
 
   /* Mobile Explore overlay layout and alignment */
@@ -39,11 +43,7 @@
     padding: 1rem !important;
     box-sizing: border-box !important;
   }
-  .explore-overlay .exp-title {
-    align-self: flex-start !important;
-  }
   .explore-overlay .exp-sub {
-    align-self: flex-start !important;
     margin-top: auto !important;
   }
 }
