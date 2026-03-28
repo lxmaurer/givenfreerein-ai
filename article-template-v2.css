@@ -9,11 +9,13 @@
   }
   .about-section-content h2 {
     font-size: 1.4rem !important;
-    color: #fff !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
   }
   .about-section-content p {
     font-size: 0.95rem !important;
-    color: #fff !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
     margin: 0 !important;
   }
 }
