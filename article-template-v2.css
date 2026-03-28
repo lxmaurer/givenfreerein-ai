@@ -18,6 +18,17 @@
     opacity: 1 !important;
     margin: 0 !important;
   }
+
+  /* Match Explore the Journal card overlay text to About section styles */
+  .explore-overlay .exp-title {
+    color: #ffffff !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+  }
+  .explore-overlay .exp-sub {
+    color: #ffffff !important;
+    font-size: 0.95rem !important;
+  }
 }
 @media (max-width: 768px) {
   .explore-grid {
