@@ -17,8 +17,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <!-- MailerLite Universal -->
+  <script>(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');ml('account', '2231922');</script>
+  <!-- End MailerLite Universal -->
   <style>
     .series-hero {
+          .sidebar-parts li.part-current a {
+            cursor: pointer;
+          }
       position: relative;
       width: 100vw;
       max-width: 100vw;
@@ -400,11 +407,7 @@
 
         <div class="article-v2-sidebar-card">
           <h3>Newsletter</h3>
-          <p>Subscribe for more stories and updates.</p>
-          <form class="article-v2-newsletter-form">
-            <input type="email" placeholder="Your email" required>
-            <button type="submit">Subscribe</button>
-          </form>
+          <div class="ml-embedded" data-form="jUW0TA"></div>
         </div>
       </aside>
     </section>
@@ -414,16 +417,20 @@
     <section class="article-v2-related">
       <h2>Series Chapters</h2>
       <div class="chapter-grid">
-        <article class="chapter-card">
-          <div class="chapter-kicker">Part I</div>
-          <h3><a class="chapter-link" href="article-soul-of-spain-part-1.html">Bloodlines of Empire</a></h3>
-          <p>The ancient roots of the Iberian horse, from early peninsula stock to Moorish influence and the breeding traditions that shaped the Andalusian.</p>
-        </article>
-        <article class="chapter-card">
-          <div class="chapter-kicker">Part II</div>
-          <h3><a class="chapter-link" href="article-soul-of-spain-part-2.html">The Vaquero</a></h3>
-          <p>The Spanish vaquero, the riding systems of stock work, and the traditions that would eventually travel into the Americas.</p>
-        </article>
+        <a href="article-soul-of-spain-part-1.html" style="text-decoration: none; color: inherit; display: block;">
+          <article class="chapter-card">
+            <div class="chapter-kicker">Part I</div>
+            <h3>Bloodlines of Empire</h3>
+            <p>The ancient roots of the Iberian horse, from early peninsula stock to Moorish influence and the breeding traditions that shaped the Andalusian.</p>
+          </article>
+        </a>
+        <a href="article-soul-of-spain-part-2.html" style="text-decoration: none; color: inherit; display: block;">
+          <article class="chapter-card">
+            <div class="chapter-kicker">Part II</div>
+            <h3>The Vaquero</h3>
+            <p>The Spanish vaquero, the riding systems of stock work, and the traditions that would eventually travel into the Americas.</p>
+          </article>
+        </a>
         <article class="chapter-card">
           <div class="chapter-kicker">Part III</div>
           <h3>The Royal Touch</h3>
