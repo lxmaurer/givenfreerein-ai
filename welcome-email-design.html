@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Given Free Rein — Email Preview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f0ece4;
+    font-family: 'Jost', sans-serif;
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+
+  .email-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #faf8f4;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: #1a1712;
+    padding: 40px 48px 36px;
+    text-align: center;
+    position: relative;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #a8823a, #a8823a, #a8823a);
+  }
+
+  .header-eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #a8823a;
+    margin-bottom: 18px;
+  }
+
+  .header-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 34px;
+    color: #faf8f4;
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+
+  .header-rule {
+    width: 48px;
+    height: 1px;
+    background: #a8823a;
+    margin: 20px auto 0;
+  }
+
+  /* ── Hero — light and airy ── */
+  .hero {
+    background: #faf8f4;
+    padding: 56px 48px 52px;
+    text-align: center;
+    border-bottom: 1px solid #e0d9cc;
+  }
+
+  .hero-welcome {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #a8823a;
+    margin-bottom: 20px;
+  }
+
+  .hero-rule {
+    width: 32px;
+    height: 1px;
+    background: #a8823a;
+    margin: 0 auto 28px;
+  }
+
+  .hero-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.12;
+    color: #1a1712;
+    margin-bottom: 28px;
+  }
+
+  .hero-headline em {
+    font-style: italic;
+    font-weight: 300;
+    color: #4a3f2f;
+  }
+
+  .hero-body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #5c5445;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  /* ── Content ── */
+  .content {
+    padding: 52px 48px;
+    background: #faf8f4;
+  }
+
+  .section-label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #a8823a;
+    margin-bottom: 24px;
+  }
+
+  /* Inside list */
+  .inside-list {
+    list-style: none;
+    margin-bottom: 52px;
+    border-top: 1px solid #e0d9cc;
+  }
+
+  .inside-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e0d9cc;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #2c2820;
+    line-height: 1.4;
+  }
+
+  .inside-list li::before {
+    content: '—';
+    color: #a8823a;
+    font-weight: 300;
+    flex-shrink: 0;
+  }
+
+  /* ── Article rows with photos ── */
+  .articles-label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #a8823a;
+    margin-bottom: 28px;
+  }
+
+  .article-rows {
+    list-style: none;
+    margin-bottom: 52px;
+    border-top: 1px solid #e0d9cc;
+  }
+
+  .article-rows li {
+    border-bottom: 1px solid #e0d9cc;
+  }
+
+
+  .article-row {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  .article-row-image {
+    width: 110px;
+    height: 88px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #d8d0c4;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .article-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .article-row-image {
+      width: 100%;
+      height: 160px;
+    }
+    .article-row-text {
+      padding: 14px 16px;
+    }
+    .article-row-arrow {
+      display: none;
+    }
+    .content {
+      padding: 36px 24px;
+    }
+    .hero {
+      padding: 40px 24px;
+    }
+    .hero-headline {
+      font-size: 36px;
+    }
+  }
+
+  .article-row-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .article-row:hover .article-row-image img {
+    transform: scale(1.04);
+  }
+
+  .article-row-text {
+    flex: 1;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .article-row-category {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #a8823a;
+  }
+
+  .article-row-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #2c2820;
+    line-height: 1.2;
+  }
+
+  .article-row-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8a7f70;
+    line-height: 1.3;
+  }
+
+  .article-row-arrow {
+    font-size: 16px;
+    color: #a8823a;
+    flex-shrink: 0;
+    padding-right: 20px;
+  }
+
+  /* ── Closing ── */
+  .closing {
+    border-top: 1px solid #e0d9cc;
+    padding-top: 36px;
+  }
+
+  .closing-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #5c5445;
+    margin-bottom: 28px;
+  }
+
+  .closing-sig {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: #2c2820;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    background: #1a1712;
+    padding: 36px 48px;
+    text-align: center;
+  }
+
+  .footer-rule {
+    width: 32px;
+    height: 1px;
+    background: #a8823a;
+    margin: 0 auto 24px;
+  }
+
+  .footer-site {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    color: #faf8f4;
+    margin-bottom: 16px;
+  }
+
+  .footer-site a {
+    color: #faf8f4;
+    text-decoration: none;
+  }
+
+  .footer-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #6a6055;
+    line-height: 1.9;
+  }
+
+  .footer-text a {
+    color: #a8823a;
+    text-decoration: none;
+  }
+
+  /* ── Preview label ── */
+  .preview-label {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8f80;
+  }
+</style>
+</head>
+<body>
+
+<p class="preview-label">Email Preview — Given Free Rein</p>
+
+<div class="email-wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-eyebrow">Horse Culture Journal</div>
+    <div class="header-logo">Given Free Rein</div>
+    <div class="header-rule"></div>
+  </div>
+
+  <!-- Hero — light -->
+  <div class="hero">
+    <div class="hero-welcome">A note to welcome you</div>
+    <div class="hero-rule"></div>
+    <div class="hero-headline">We are glad<br><em>you're here.</em></div>
+    <div class="hero-body">
+      Given Free Rein is a long-form journal dedicated to exploring horse cultures, traditions, and the enduring relationship between horses and humans across the world. It's a project shaped by genuine curiosity, respect, and a quiet excitement to share. Each piece is crafted to offer depth, clarity, and a sense of understanding — with the aim of helping you see horses, their worlds, and the people connected to them a little more clearly.
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <div class="section-label">Inside the journal</div>
+    <ul class="inside-list">
+      <li>Horse cultures and working traditions shaped by landscape and history</li>
+      <li>Breed histories and the regions that define them</li>
+      <li>Riding styles, tack, and the craftsmanship behind them</li>
+      <li>Destinations where horses remain part of everyday life</li>
+    </ul>
+
+    <div class="articles-label">A few places to begin</div>
+    <ul class="article-rows">
+
+      <li>
+        <a class="article-row" href="https://givenfreerein.com.au/article-camargue.html">
+          <div class="article-row-image">
+            <img src="https://givenfreerein.com.au/images/camargue/camargue_.horses.jpg" alt="Camargue horses" />
+          </div>
+          <div class="article-row-text">
+            <span class="article-row-category">Destinations</span>
+            <span class="article-row-title">Camargue</span>
+            <span class="article-row-subtitle">White Horses of the Rhône Delta</span>
+          </div>
+          <span class="article-row-arrow">→</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="article-row" href="https://givenfreerein.com.au/article-escaramuza.html">
+          <div class="article-row-image">
+            <img src="https://givenfreerein.com.au/images/escaramuza/escaramuza_women.jpg" alt="Escaramuza" />
+          </div>
+          <div class="article-row-text">
+            <span class="article-row-category">Cultures</span>
+            <span class="article-row-title">Escaramuza</span>
+            <span class="article-row-subtitle">Riding, Tradition &amp; Identity</span>
+          </div>
+          <span class="article-row-arrow">→</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="article-row" href="https://givenfreerein.com.au/article-sidesaddle.html">
+          <div class="article-row-image">
+            <img src="https://givenfreerein.com.au/images/sidesaddle/sidesaddle_hero.jpg" alt="The Side Saddle" />
+          </div>
+          <div class="article-row-text">
+            <span class="article-row-category">Craftsmanship</span>
+            <span class="article-row-title">The Side Saddle</span>
+            <span class="article-row-subtitle">Form, Function &amp; History</span>
+          </div>
+          <span class="article-row-arrow">→</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="closing">
+      <div class="closing-text">
+        Future issues will feature our latest articles, along with selected archives and ongoing series — keeping you connected to new stories while revisiting those worth returning to.<br><br>
+        Thank you for being part of it.
+      </div>
+      <div class="closing-sig">— Given Free Rein</div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-rule"></div>
+    <div class="footer-site"><a href="https://givenfreerein.com.au">givenfreerein.com.au</a></div>
+    <div class="footer-text">
+      You're receiving this because you subscribed to Given Free Rein.<br>
+      <a href="{$unsubscribe}">Unsubscribe</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
