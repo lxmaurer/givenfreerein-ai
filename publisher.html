@@ -285,6 +285,7 @@
     .dot.ig { background: #5a6bbf; }
     .dot.fb { background: #1877f2; }
     .dot.nl { background: #c17f2a; }
+    .dot.rb { background: #8b5cf6; }
 
     .card-title {
       font-family: 'Playfair Display', serif;
@@ -431,6 +432,18 @@
         <textarea id="nlOutput" spellcheck="true"></textarea>
       </div>
 
+      <div class="output-card" id="rbCard">
+        <div class="card-header">
+          <span class="dot rb"></span>
+          <span class="card-title">Reel Brief</span>
+          <div class="card-actions">
+            <span class="char-count" id="rbCount">0</span>
+            <button class="copy-btn" id="rbCopy">Copy</button>
+          </div>
+        </div>
+        <textarea id="rbOutput" spellcheck="true"></textarea>
+      </div>
+
     </div>
   </div>
 
@@ -442,6 +455,7 @@
     let articleTitle = '';
     let articleUrl = '';
     let selectedImages = [];
+    let imageSrcs = [];
     let tone = 'Editorial';
 
     // --- Utility ---
@@ -461,6 +475,7 @@
       document.getElementById('igCount').textContent = document.getElementById('igOutput').value.length;
       document.getElementById('fbCount').textContent = document.getElementById('fbOutput').value.length;
       document.getElementById('nlCount').textContent = document.getElementById('nlOutput').value.length;
+      document.getElementById('rbCount').textContent = document.getElementById('rbOutput').value.length;
     }
     function saveApiKey(key) { localStorage.setItem('gfr_api_key', key); }
     function loadApiKey() { return localStorage.getItem('gfr_api_key') || ''; }
@@ -470,6 +485,7 @@
       document.getElementById('igOutput').value = '';
       document.getElementById('fbOutput').value = '';
       document.getElementById('nlOutput').value = '';
+      document.getElementById('rbOutput').value = '';
       updateCharCounts();
     }
     function extractImagesFromHtml(html, articleFolder) {
@@ -554,7 +570,7 @@
         let html = await res.text();
         articleTitle = getTitle(html) || selectedArticle.title || '';
         articleText = stripHtml(html).slice(0, 3000);
-        const imageSrcs = extractImagesFromHtml(html, articleFolder);
+        imageSrcs = extractImagesFromHtml(html, articleFolder);
         document.getElementById('imagesPlaceholder').style.display = 'none';
         document.getElementById('imagesGrid').style.display = '';
         renderImageThumbnails(imageSrcs);
@@ -591,7 +607,7 @@
       let key = apiKeyInput.value.trim();
       if (!key) { alert('Enter your OpenAI API key.'); return; }
       let imagesList = selectedImages.length ? selectedImages.join(', ') : 'none specified';
-      let prompt = `You are the content publisher for Given Free Rein — an editorial media platform exploring global horse culture in a National Geographic style. Voice: intelligent, evocative, grounded in place and craft. Never salesy or generic. Always write as someone who has been there.\n\nGenerate three content pieces. Label each exactly as shown.\n\n[INSTAGRAM]\n150-220 words. Strong opening hook. Tell a small story from the article. End with: Full story at the link in bio.\nAdd 10-12 relevant hashtags on a new line.\n\n[FACEBOOK]\n80-120 words. Conversational but intelligent. Lead with what makes this worth reading. End with the article URL. No hashtags.\n\n[NEWSLETTER]\n120-180 words. Written as a personal letter to someone who loves horses and travel. Feel like correspondence not summary. Do not start with a single word or sentence fragment. Begin directly with the letter. End with: Read the full story here → ${articleUrl}\n\nArticle title: ${articleTitle}\nArticle URL: ${articleUrl}\nImages available: ${imagesList}\nTone: ${tone}\n\nArticle text (first 3000 characters):\n${articleText}`;
+      let prompt = `You are the content publisher for Given Free Rein — an editorial media platform exploring global horse culture in a National Geographic style. Voice: intelligent, evocative, grounded in place and craft. Never salesy or generic. Always write as someone who has been there.\n\nGenerate three content pieces. Label each exactly as shown.\n\n[INSTAGRAM]\n150-220 words. Strong opening hook. Tell a small story from the article. End with: Full story at the link in bio.\nAdd 10-12 relevant hashtags on a new line.\n\n[FACEBOOK]\n80-120 words. Conversational but intelligent. Lead with what makes this worth reading. End with the article URL. No hashtags.\n\n[NEWSLETTER]\n120-180 words. Written as a personal letter to someone who loves horses and travel. Feel like correspondence not summary. Do not start with a single word or sentence fragment. Begin directly with the letter. End with: Read the full story here → ${articleUrl}\n\n[REEL BRIEF]\nCreate a reel brief for a short Instagram slideshow reel (15-30 seconds) that teases the article and drives viewers to read the full story.\n\nFormat exactly as:\n\nIMAGES (in order):\n1. [filename] — [one punchy editorial line, up to 10 words, magazine cover style, makes viewer want to know more]\n2. [filename] — [same style]\n3. [filename] — [same style]\n4. [filename] — [same style]\n5. [filename] — [same style]\n\nFINAL FRAME: "Read the full story at givenfreerein.com" (or a variation that feels natural)\n\nMUSIC: [specific style suggestion tied to the article's region and culture — e.g. "Flamenco guitar, slow and atmospheric" not just "Spanish music"]\n\nCAPTION: [One line for the reel caption that complements but does not repeat the main Instagram caption]\n\nThe overall feel should be: editorial documentary teaser, not influencer content. Think National Geographic short. Each line should raise a question the article answers. Do not add any closing commentary or explanation after the reel brief. End after the CAPTION line.\n\nAvailable images (use ONLY these exact filenames): ${imageSrcs.length ? imageSrcs.map(s => s.split('/').pop()).join(', ') : 'no images available'}\n\nArticle title: ${articleTitle}\nArticle URL: ${articleUrl}\nImages available: ${imagesList}\nTone: ${tone}\n\nArticle text (first 3000 characters):\n${articleText}`;
       try {
         let res = await fetch('https://api.openai.com/v1/chat/completions', {
           method: 'POST',
@@ -604,12 +620,14 @@
         if (!res.ok) throw new Error('API error');
         let data = await res.json();
         let content = data.choices?.[0]?.message?.content || '';
-        let igMatch = content.match(/\[INSTAGRAM\][\s\S]*?(?=\[FACEBOOK\]|\[NEWSLETTER\]|$)/i);
-        let fbMatch = content.match(/\[FACEBOOK\][\s\S]*?(?=\[NEWSLETTER\]|$)/i);
-        let nlMatch = content.match(/\[NEWSLETTER\][\s\S]*?$/i);
+        let igMatch = content.match(/\[INSTAGRAM\][\s\S]*?(?=\[FACEBOOK\]|\[NEWSLETTER\]|\[REEL BRIEF\]|$)/i);
+        let fbMatch = content.match(/\[FACEBOOK\][\s\S]*?(?=\[NEWSLETTER\]|\[REEL BRIEF\]|$)/i);
+        let nlMatch = content.match(/\[NEWSLETTER\][\s\S]*?(?=\[REEL BRIEF\]|$)/i);
+        let rbMatch = content.match(/\[REEL BRIEF\][\s\S]*?$/i);
         document.getElementById('igOutput').value = igMatch ? igMatch[0].replace(/\[INSTAGRAM\]/i, '').trim() : '';
         document.getElementById('fbOutput').value = fbMatch ? fbMatch[0].replace(/\[FACEBOOK\]/i, '').trim() : '';
         document.getElementById('nlOutput').value = nlMatch ? nlMatch[0].replace(/\[NEWSLETTER\]/i, '').trim() : '';
+        document.getElementById('rbOutput').value = rbMatch ? rbMatch[0].replace(/\[REEL BRIEF\]/i, '').trim() : '';
         updateCharCounts();
       } catch (e) {
         alert('Failed to generate content.');
@@ -633,6 +651,7 @@
     setupCopy('igCopy', 'igOutput');
     setupCopy('fbCopy', 'fbOutput');
     setupCopy('nlCopy', 'nlOutput');
+    setupCopy('rbCopy', 'rbOutput');
 
     // --- Clear ---
     document.getElementById('clearBtn').addEventListener('click', resetOutputs);
