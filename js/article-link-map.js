@@ -2,7 +2,7 @@
 // Each entry defines one destination URL and the phrases that should link to it.
 window.articleKeywordDatabase = [
   {
-    url: "article-andalusian.html",
+    url: "content/source-articles/article-andalusian.html",
     keywords: [
       "Andalusian",
       "Andalusian horse",
@@ -14,7 +14,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-camargue.html",
+    url: "content/source-articles/article-camargue.html",
     keywords: [
       "Camargue",
       "Camargue horse",
@@ -25,7 +25,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-comanche.html",
+    url: "content/source-articles/article-comanche.html",
     keywords: [
       "Comanche",
       "Comanche horse nation",
@@ -35,7 +35,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-escaramuza.html",
+    url: "content/source-articles/article-escaramuza.html",
     keywords: [
       "Escaramuza",
       "Mexican escaramuza",
@@ -45,7 +45,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-the-side-saddle.html",
+    url: "content/source-articles/article-the-side-saddle.html",
     keywords: [
       "side saddle",
       "side-saddle",
@@ -55,7 +55,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-spanish-saddle.html",
+    url: "content/source-articles/article-spanish-saddle.html",
     keywords: [
       "Spanish saddle",
       "Silla Vaquera",
@@ -67,7 +67,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-soul-of-spain-part-1.html",
+    url: "content/source-articles/article-soul-of-spain-part-1.html",
     keywords: [
       "Soul of Spain Part I",
       "Bloodlines of Empire",
@@ -77,7 +77,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-soul-of-spain-part-2.html",
+    url: "content/source-articles/article-soul-of-spain-part-2.html",
     keywords: [
       "Soul of Spain Part II",
       "The Vaquero",
@@ -88,7 +88,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-fell-pony.html",
+    url: "content/source-articles/article-fell-pony.html",
     keywords: [
       "Fell Pony",
       "The Fell Pony",
@@ -98,7 +98,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-my-search-for-the-fell-pony.html",
+    url: "content/source-articles/article-my-search-for-the-fell-pony.html",
     keywords: [
       "Search for the Fell Pony",
       "my search for the fell pony",
@@ -107,7 +107,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-falabella.html",
+    url: "content/source-articles/article-falabella.html",
     keywords: [
       "Falabella",
       "Falabella horse",
@@ -117,7 +117,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-marwari.html",
+    url: "content/source-articles/article-marwari.html",
     keywords: [
       "Marwari",
       "Marwari horse",
@@ -127,7 +127,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-pushkar.html",
+    url: "content/source-articles/article-pushkar.html",
     keywords: [
       "Pushkar",
       "Pushkar Fair",
@@ -137,7 +137,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-tbourida.html",
+    url: "content/source-articles/article-tbourida.html",
     keywords: [
       "Tbourida",
       "fantasia",
@@ -148,7 +148,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-sandalwood-pony.html",
+    url: "content/source-articles/article-sandalwood-pony.html",
     keywords: [
       "Sandalwood pony",
       "Sandalwood Pony of Sumba",
@@ -158,7 +158,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-sumba.html",
+    url: "content/source-articles/article-sumba.html",
     keywords: [
       "Sumba",
       "Pasola",
@@ -168,7 +168,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-spirit-horses-of-yakutia.html",
+    url: "content/source-articles/article-spirit-horses-of-yakutia.html",
     keywords: [
       "Yakutia",
       "Yakut horse",
@@ -178,7 +178,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-australian-stock-horse.html",
+    url: "content/source-articles/article-australian-stock-horse.html",
     keywords: [
       "Australian Stock Horse",
       "stock horse",
@@ -188,7 +188,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-return-of-the-horse.html",
+    url: "content/source-articles/article-return-of-the-horse.html",
     keywords: [
       "return of the horse",
       "rewilding with horses",
@@ -198,7 +198,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-billy-barge-horse.html",
+    url: "content/source-articles/article-billy-barge-horse.html",
     keywords: [
       "Billy Barge",
       "Billy Barge horse",
@@ -208,7 +208,7 @@ window.articleKeywordDatabase = [
     ]
   },
   {
-    url: "article-bloodlines-borders.html",
+    url: "content/source-articles/article-bloodlines-borders.html",
     keywords: [
       "bloodlines and borders",
       "bloodlines borders",
