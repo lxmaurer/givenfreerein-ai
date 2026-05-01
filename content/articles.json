@@ -3,7 +3,7 @@
     {
       "id": "spanish-saddle",
       "title": "Tack Through Time: A Comprehensive Guide to the Spanish Saddle and Its Variants",
-      "local_file": "article-spanish-saddle.html",
+      "local_file": "content/source-articles/article-spanish-saddle.html",
       "hero_image": "images/spanish-saddle/spanish_saddle.jpg",
       "hero_alt": "Andalusian horse fitted with a traditional Spanish saddle",
       "excerpt": "Few pieces of tack carry as much history as the Spanish saddle. From the war horses of Iberia to the dressage arenas of today, this guide traces how form, function, and culture shaped one of riding's most enduring designs.",
@@ -14,7 +14,7 @@
     {
       "id": "soul-of-spain-part-2",
       "title": "Soul of Spain: Part II — The Vaquero",
-      "local_file": "article-soul-of-spain-part-2.html",
+      "local_file": "content/source-articles/article-soul-of-spain-part-2.html",
       "hero_image": "images/soul-of-spain-part-2/hero-vaquero.jpg",
       "hero_alt": "Spanish vaquero riding across open country",
       "excerpt": "Across the wide dehesas of southern Spain, the vaquero emerged as both worker and symbol. Mounted on Iberian horses, they managed fighting bulls and shaped a tradition of horsemanship that crossed the Atlantic.",
@@ -25,7 +25,7 @@
     {
       "id": "soul-of-spain-part-1",
       "title": "Soul of Spain: Part I — Bloodlines of Empire",
-      "local_file": "article-soul-of-spain-part-1.html",
+      "local_file": "content/source-articles/article-soul-of-spain-part-1.html",
       "hero_image": "images/soul-of-spain-part-1/hero.jpg",
       "hero_alt": "Andalusian horse portrait in warm light",
       "excerpt": "The Andalusian is not a modern invention. It is an inheritance shaped by terrain, empire, faith, and fire — a horse whose bloodlines carry the weight of a civilisation.",
@@ -36,7 +36,7 @@
     {
       "id": "the-side-saddle",
       "title": "The Side Saddle: An Evolution Shaped by Constraint, Craft, and Culture",
-      "local_file": "article-the-side-saddle.html",
+      "local_file": "content/source-articles/article-the-side-saddle.html",
       "hero_image": "images/sidesaddle/sidesaddle_hero.jpg",
       "hero_alt": "Women riding sidesaddle at a traditional equestrian event",
       "excerpt": "The side saddle was not a decorative tradition but a technical response to social constraint. This article traces its evolution from medieval Europe to its peak in British hunting, and its survival in living traditions today.",
@@ -47,7 +47,7 @@
     {
       "id": "my-search-for-the-fell-pony",
       "title": "My Search for the Fell Pony",
-      "local_file": "article-my-search-for-the-fell-pony.html",
+      "local_file": "content/source-articles/article-my-search-for-the-fell-pony.html",
       "hero_image": "images/my-search-for-the-fell-pony/search_hero.jpg",
       "hero_alt": "Fell Pony country in Cumbria",
       "excerpt": "When I arrived in Manchester, I had one goal: find the Fell Pony in its native hills. This is the story of that first search — the breeders, the fells, and the horses I found.",
@@ -58,7 +58,7 @@
     {
       "id": "fell-pony",
       "title": "The Fell Pony: Strength and Spirit of the Northern Hills",
-      "local_file": "article-fell-pony.html",
+      "local_file": "content/source-articles/article-fell-pony.html",
       "hero_image": "images/fell-pony/fell_hero.jpg",
       "hero_alt": "Fell Ponies in the British countryside",
       "excerpt": "Across the windswept fells of Cumbria, the Fell Pony moves as though carved from the landscape itself. Hardy, versatile, and rare, it is one of Britain's most quietly remarkable native breeds.",
@@ -69,7 +69,7 @@
     {
       "id": "spirit-horses-yakutia",
       "title": "Spirit Horses of Yakutia",
-      "local_file": "article-spirit-horses-of-yakutia.html",
+      "local_file": "content/source-articles/article-spirit-horses-of-yakutia.html",
       "hero_image": "images/spirit-horses-yakutia/yakutia_hero.jpg",
       "hero_alt": "Yakutian horse in snowy Arctic landscape",
       "excerpt": "In the frozen vastness of Russia's Sakha Republic, the Yakutian horse survives where few domestic animals can — foraging beneath metres of snow, enduring temperatures that drop below −60°C.",
@@ -80,7 +80,7 @@
     {
       "id": "billy-barge-horse",
       "title": "Old Billy the Barge Horse: The Long Life of a Working Legend",
-      "local_file": "article-billy-barge-horse.html",
+      "local_file": "content/source-articles/article-billy-barge-horse.html",
       "hero_image": "images/billy/billy_hero.jpg",
       "hero_alt": "A working horse towing a barge along a British canal",
       "excerpt": "Born in 1760 and living until 1822, Billy the barge horse reached the almost mythical age of 62 — spending most of his life hauling boats along England's inland waterways.",
@@ -91,7 +91,7 @@
     {
       "id": "tbourida",
       "title": "The Pulse of Tbourida: Morocco's Equestrian Spectacle",
-      "local_file": "article-tbourida.html",
+      "local_file": "content/source-articles/article-tbourida.html",
       "hero_image": "images/tbourida/tbourida_hero.jpg",
       "hero_alt": "Riders charging in Morocco's Tbourida performance",
       "excerpt": "At full gallop across Moroccan plains, teams of riders launch in perfect line and release a single synchronized musket blast. Tbourida is not folklore — it is a living discipline with deep cultural roots.",
@@ -102,7 +102,7 @@
     {
       "id": "sumba",
       "title": "Sumba, Indonesia: Where the Sandalwood Pony Still Runs Free",
-      "local_file": "article-sumba.html",
+      "local_file": "content/source-articles/article-sumba.html",
       "hero_image": "images/sumba/sumba_hero.jpg",
       "hero_alt": "Rider on horseback on the coast of Sumba, Indonesia",
       "excerpt": "Remote, elemental, and unlike anywhere else in Indonesia — Sumba is an island where horses are woven into heritage, ceremony, and everyday life.",
@@ -113,7 +113,7 @@
     {
       "id": "pushkar",
       "title": "Pushkar Horse & Camel Fair: A Sacred Stage for India's Marwari Majesty",
-      "local_file": "article-pushkar.html",
+      "local_file": "content/source-articles/article-pushkar.html",
       "hero_image": "images/pushkar/pushkar_hero.jpg",
       "hero_alt": "A decorated Marwari horse with red and gold harness at the Pushkar Horse and Camel Fair",
       "excerpt": "Every November in Rajasthan, the Pushkar Mela transforms a Hindu pilgrimage into one of the world's most colourful livestock festivals — and a rare showcase for the Marwari horse.",
@@ -124,7 +124,7 @@
     {
       "id": "falabella",
       "title": "The Falabella: Argentina's Miniature Horse, Scaled to Perfection",
-      "local_file": "article-falabella.html",
+      "local_file": "content/source-articles/article-falabella.html",
       "hero_image": "images/falabella/falabella_hero.jpg",
       "hero_alt": "Falabella miniature horses in Argentina",
       "excerpt": "Small enough to stand beneath a dining table yet built with all the elegance of a full-sized horse, the Falabella is one of Argentina's most remarkable equestrian achievements.",
@@ -135,7 +135,7 @@
     {
       "id": "andalusian",
       "title": "The Andalusian Horse: Heritage in Motion",
-      "local_file": "article-andalusian.html",
+      "local_file": "content/source-articles/article-andalusian.html",
       "hero_image": "images/andalusian/pexels-missi-kopf-12166602-6215857.jpg",
       "hero_alt": "Andalusian horse standing in a sunlit field",
       "excerpt": "Renowned for its intelligence, natural balance, and expressive movement, the Andalusian combines beauty with utility — a breed whose influence spans continents and centuries.",
@@ -146,7 +146,7 @@
     {
       "id": "australian-stock-horse",
       "title": "The Australian Stock Horse: Born to Work",
-      "local_file": "article-australian-stock-horse.html",
+      "local_file": "content/source-articles/article-australian-stock-horse.html",
       "hero_image": "images/australian-stock-horse/ash_hero.jpg",
       "hero_alt": "A group of Australian Stock Horses standing together in a paddock",
       "excerpt": "Shaped by two centuries of colonial necessity and outback conditions, the Australian Stock Horse is one of the world's great working breeds — bred for endurance, intelligence, and courage.",
@@ -157,7 +157,7 @@
     {
       "id": "marwari",
       "title": "The Marwari: Built for the Desert, Bred for Loyalty",
-      "local_file": "article-marwari.html",
+      "local_file": "content/source-articles/article-marwari.html",
       "hero_image": "images/marwari/marwari_hero.png",
       "hero_alt": "Marwari horse with its famous inward-curving ears, Rajasthan India",
       "excerpt": "The Marwari horse was shaped by the desert, by war, and by generations of people who depended on it absolutely. Its inward-curving ears are just the beginning of what makes it extraordinary.",
@@ -168,7 +168,7 @@
     {
       "id": "sandalwood-pony",
       "title": "The Sandalwood Pony: Indonesia's Spirited Island Horse",
-      "local_file": "article-sandalwood-pony.html",
+      "local_file": "content/source-articles/article-sandalwood-pony.html",
       "hero_image": "images/sandalwood/sandalwood_hero.jpg",
       "hero_alt": "Young Sumbanese rider racing bareback on a Sandalwood Pony",
       "excerpt": "Compact, agile, and carrying centuries of island history, the Sandalwood Pony of Sumba is a living symbol of identity, ceremony, and resilience.",
@@ -179,7 +179,7 @@
     {
       "id": "return-of-the-horse",
       "title": "The Return of the Horse: From Extinction to Transformation",
-      "local_file": "article-return-of-the-horse.html",
+      "local_file": "content/source-articles/article-return-of-the-horse.html",
       "hero_image": "images/return-of-the-horse/roth_hero.jpg",
       "hero_alt": "A herd of wild mustangs galloping across the American plains",
       "excerpt": "Horses evolved in North America, vanished for ten millennia, and were brought back by Spanish colonizers — only to transform the continent again. This is the story of that return.",
@@ -190,7 +190,7 @@
     {
       "id": "escaramuza",
       "title": "Escaramuza: Women, Horses, and Tradition in Mexico's Arena",
-      "local_file": "article-escaramuza.html",
+      "local_file": "content/source-articles/article-escaramuza.html",
       "hero_image": "images/escaramuza/escaramuza_women.jpg",
       "hero_alt": "Women in colorful dresses and sombreros riding horses in a Mexican arena",
       "excerpt": "Set to music and performed at full gallop, Escaramuza brings eight riders into the arena as a single unit. More than spectacle, it is a disciplined team sport built on coordination, tradition, and heritage.",
@@ -201,7 +201,7 @@
     {
       "id": "comanche-horse-nation",
       "title": "Lords of the Southern Plains: The Rise and Fall of the Comanche Horse Nation",
-      "local_file": "article-comanche.html",
+      "local_file": "content/source-articles/article-comanche.html",
       "hero_image": "images/comanche/Comanche_hero.jpg",
       "hero_alt": "Three Comanche men on horseback, historical photo",
       "excerpt": "For the Comanche, the horse was not a means of travel but the foundation of warfare, survival, and freedom. On the Southern Plains, they forged a style of horsemanship so effective it reshaped power, territory, and life itself.",
@@ -212,7 +212,7 @@
     {
       "id": "camargue-horses",
       "title": "The Horses of the Camargue",
-      "local_file": "article-camargue.html",
+      "local_file": "content/source-articles/article-camargue.html",
       "hero_image": "images/camargue/camargue_.horses.jpg",
       "hero_alt": "White Camargue horses standing in water",
       "excerpt": "Tough, white, and semi-feral, the Camargue horse is a living part of southern France's wetland culture — shaped by the same marshlands the Gardians have worked for centuries.",
