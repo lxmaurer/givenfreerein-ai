@@ -41,56 +41,128 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-spanish-saddle.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-spanish-saddle.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-soul-of-spain-part-2.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-soul-of-spain-part-2.html</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-soul-of-spain-part-1.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-soul-of-spain-part-1.html</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-the-side-saddle.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-the-side-saddle.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-my-search-for-the-fell-pony.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-my-search-for-the-fell-pony.html</loc>
     <lastmod>2025-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-fell-pony.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-fell-pony.html</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-spirit-horses-of-yakutia.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-spirit-horses-of-yakutia.html</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-billy-barge-horse.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-billy-barge-horse.html</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://horseculture.com.au/article-tbourida.html</loc>
+    <loc>https://horseculture.com.au/content/source-articles/article-tbourida.html</loc>
     <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-andalusian.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-australian-stock-horse.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-bloodlines-borders.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-camargue.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-comanche.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-escaramuza.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-falabella.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-marwari.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-pushkar.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-return-of-the-horse.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-sandalwood-pony.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://horseculture.com.au/content/source-articles/article-sumba.html</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
