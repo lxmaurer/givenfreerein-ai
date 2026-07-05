@@ -252,7 +252,7 @@ def build_article(article_name: str):
         print("Keyword entry unchanged (already present or unavailable).")
 
 
-print("Given Free Rein Article Builder Ready")
+print("HorseCulture.com.au Article Builder Ready")
 
 if len(sys.argv) > 1:
     # Command-line mode

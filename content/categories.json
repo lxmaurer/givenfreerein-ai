@@ -4,7 +4,7 @@
       "id": "breeds",
       "name": "Breeds",
       "slug": "horse-breeds-from-around-the-world",
-      "url": "https://www.givenfreerein.com.au/horse-breeds-from-around-the-world",
+      "url": "https://www.horseculture.com.au/horse-breeds-from-around-the-world",
       "description": "Explore horse breeds from around the world and their cultural significance",
       "article_count": 1,
       "featured": false
@@ -13,7 +13,7 @@
       "id": "destinations",
       "name": "Destinations",
       "slug": "horse-travel-destinations",
-      "url": "https://www.givenfreerein.com.au/horse-travel-destinations",
+      "url": "https://www.horseculture.com.au/horse-travel-destinations",
       "description": "Discover horse travel destinations and equestrian tourism spots",
       "article_count": 0,
       "featured": false
@@ -22,7 +22,7 @@
       "id": "gear-tack",
       "name": "Gear & Tack",
       "slug": "unique-horse-gear-and-tack",
-      "url": "https://www.givenfreerein.com.au/unique-horse-gear-and-tack",
+      "url": "https://www.horseculture.com.au/unique-horse-gear-and-tack",
       "description": "Unique horse gear and tack from different cultures and traditions",
       "article_count": 1,
       "featured": false
@@ -31,7 +31,7 @@
       "id": "cultures",
       "name": "Cultures",
       "slug": "cultures",
-      "url": "https://www.givenfreerein.com.au/cultures",
+      "url": "https://www.horseculture.com.au/cultures",
       "description": "Horse cultures and traditions from around the world",
       "article_count": 2,
       "featured": true
@@ -40,8 +40,8 @@
       "id": "articles",
       "name": "All Articles",
       "slug": "all-articles",
-      "url": "https://www.givenfreerein.com.au/all-articles",
-      "description": "Complete collection of all articles on Given Free Rein",
+      "url": "https://www.horseculture.com.au/all-articles",
+      "description": "Complete collection of all articles on HorseCulture.com.au",
       "article_count": 4,
       "featured": false
     }

@@ -1,5 +1,5 @@
 const article = {
-  siteTitle: "Given Free Rein",
+  siteTitle: "HorseCulture.com.au",
   siteTagline: "Equestrian Culture Journal",
   navigation: ["Journal", "Destinations", "Breeds", "Culture"],
 
@@ -121,7 +121,7 @@ const article = {
       heading: "CLOSING REFLECTION",
       paragraphs: [
         "Closing paragraph drawing meaning from the horse culture explored in the article.",
-        "Final reflective line consistent with the Given Free Rein voice.",
+        "Final reflective line consistent with the HorseCulture.com.au voice.",
       ],
     },
   ],
@@ -151,7 +151,7 @@ const article = {
   ],
 
   footerText:
-    "Given Free Rein — documenting the human–horse bond across cultures.",
+    "HorseCulture.com.au — documenting the human–horse bond across cultures.",
 
   footerLinks: "Journal · Destinations · Breed Features · Contact",
 };

@@ -1,11 +1,11 @@
-# Given Free Rein – National Geographic Style Horse Culture Journal
+# HorseCulture.com.au – National Geographic Style Horse Culture Journal
 
-A fresh, editorial website redesign built from extracted content from the live Given Free Rein website. This project demonstrates a complete rebuild with National Geographic-inspired design aesthetics.
+A fresh, editorial website redesign built from extracted content from the live HorseCulture.com.au website. This project demonstrates a complete rebuild with National Geographic-inspired design aesthetics.
 
 ## 🎯 Project Overview
 
 This website was built by:
-1. **Crawling** the live Given Free Rein website (`www.givenfreerein.com.au`)
+1. **Crawling** the live HorseCulture.com.au website (`www.horseculture.com.au`)
 2. **Extracting** all content (articles, titles, excerpts, categories, metadata)
 3. **Designing** a completely new National Geographic-style editorial layout
 4. **Building** homepage, article pages, and navigation from scratch
@@ -86,11 +86,11 @@ givenfreerein-ai/
 
 ## 📊 Content Source
 
-All content was ethically extracted from the live Given Free Rein website and restructured for this new design. The original website served only as a content library - the design is completely original and not derived from existing layouts.
+All content was ethically extracted from the live HorseCulture.com.au website and restructured for this new design. The original website served only as a content library - the design is completely original and not derived from existing layouts.
 
 ---
 
 **Built with:** HTML5, CSS3, Google Fonts  
 **Design Inspiration:** National Geographic editorial style  
-**Content Source:** www.givenfreerein.com.au</content>
+**Content Source:** www.horseculture.com.au</content>
 <parameter name="filePath">/Users/cassandramaurer/givenfreerein-ai/README.md

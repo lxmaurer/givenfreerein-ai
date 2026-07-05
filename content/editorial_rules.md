@@ -1,4 +1,4 @@
-# Given Free Rein — Editorial Rules
+# HorseCulture.com.au — Editorial Rules
 
 These rules control how article content and images are arranged inside the article template.
 
